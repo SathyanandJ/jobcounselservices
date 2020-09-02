@@ -1,0 +1,4 @@
+2020-09-01 08:53:24,512 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 27200 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-01 08:53:24,514 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-01 08:53:24,515 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-01 08:53:28,631 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.354 seconds (JVM running for 5.324)
