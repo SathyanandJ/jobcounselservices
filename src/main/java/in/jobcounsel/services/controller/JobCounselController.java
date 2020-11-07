@@ -11,21 +11,27 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.async.DeferredResult;
 
 import in.jobcounsel.platform.exception.JobServicesException;
 import in.jobcounsel.services.JobCounselServices;
+import in.jobcounsel.services.request.JobReq;
 import in.jobcounsel.services.response.Branch;
 import in.jobcounsel.services.response.Job;
 import in.jobcounsel.services.response.JobCount;
+import in.jobcounsel.services.response.JobDetail;
 import in.jobcounsel.services.response.Organization;
 import in.jobcounsel.services.response.Sector;
 
 @RestController
+@CrossOrigin
 @RequestMapping(value = "/services/v1/")
 @PropertySource("classpath:application.properties")
 public class JobCounselController {
@@ -40,7 +46,6 @@ public class JobCounselController {
 	
 	@Value( "${application.heavyweight.restservices.timout}" )
 	private Long heavyWeightServiceTimeout;
-	
 	
 	@GetMapping(value = "jobs/sectors")
 	public DeferredResult<ResponseEntity<?>> getAllSectorTypes() {
@@ -75,7 +80,7 @@ public class JobCounselController {
 				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(branchList));
 			} catch (JobServicesException e) {
-				logger.error("Error While Getting All Sectors");
+				logger.error("Error While Getting All Branches");
 				branchList = new ArrayList<Branch>();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(branchList));
@@ -96,7 +101,7 @@ public class JobCounselController {
 				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(organizationList));
 			} catch (JobServicesException e) {
-				logger.error("Error While Getting All Sectors");
+				logger.error("Error While Getting All Organization");
 				organizationList = new ArrayList<Organization>();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(organizationList));
@@ -129,6 +134,7 @@ public class JobCounselController {
 		
 		return output;
 	}
+	
 
 	@GetMapping(value = "jobs/{categoryid}")
 	public DeferredResult<ResponseEntity<?>> getAllJobsByCategory(
@@ -143,7 +149,7 @@ public class JobCounselController {
 				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobsList));
 			} catch (JobServicesException e) {
-				logger.error("Error While Processing Total Job Count");
+				logger.error("Error While Processing Get AllJobs By Category");
 				jobsList = new ArrayList<Job>();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobsList));
@@ -166,7 +172,7 @@ public class JobCounselController {
 				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobsList));
 			} catch (JobServicesException e) {
-				logger.error("Error While Processing Total Job Count");
+				logger.error("Error While Processing GetAllJobs By Category And Type");
 				jobsList = new ArrayList<Job>();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobsList));
@@ -181,13 +187,35 @@ public class JobCounselController {
 		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
 
 		ForkJoinPool.commonPool().submit(() -> {
-			Job jobDetail = null;
+			JobDetail jobDetail = null;
 			try {
 				jobDetail = jobCounselServices.getJobDetails(jobId);
 				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobDetail));
 			} catch (JobServicesException e) {
-				logger.error("Error While Processing Total Job Count");
+				logger.error("Error While Processing Get Job Details");
+				jobDetail = new JobDetail();
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(jobDetail));
+			}
+		});
+		return output;
+	}
+	
+	
+	@PostMapping(value = "jobs/job")
+	public DeferredResult<ResponseEntity<?>> saveJob(@RequestBody JobReq jobReq){
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(lightWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			Job jobDetail = null;
+			try {
+				jobDetail = jobCounselServices.saveJob(jobReq);
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(jobDetail));
+			} catch (JobServicesException e) {
+				logger.error("Error While Processing Add A New Jobs");
 				jobDetail = new Job();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobDetail));
@@ -195,5 +223,7 @@ public class JobCounselController {
 		});
 		return output;
 	}
-
+	
+	
+	
 }

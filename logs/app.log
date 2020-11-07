@@ -2,3 +2,301 @@
 2020-09-01 08:53:24,514 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
 2020-09-01 08:53:24,515 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
 2020-09-01 08:53:28,631 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.354 seconds (JVM running for 5.324)
+2020-09-06 18:46:33,024 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 20264 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-06 18:46:33,046 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-06 18:46:33,054 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-06 18:46:39,570 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.836 seconds (JVM running for 8.02)
+2020-09-13 20:03:12,837 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 3804 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-13 20:03:12,839 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-13 20:03:12,842 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-13 20:03:18,528 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.957 seconds (JVM running for 7.032)
+2020-09-14 22:44:59,320 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 4344 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-14 22:44:59,344 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-14 22:44:59,346 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-14 22:45:07,903 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 8.901 seconds (JVM running for 9.889)
+2020-09-15 22:48:19,049 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 13500 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-15 22:48:19,148 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-15 22:48:19,150 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-15 22:48:31,867 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 13.551 seconds (JVM running for 18.165)
+2020-09-17 11:19:31,610 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 11624 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-17 11:19:31,613 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-17 11:19:31,614 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-17 11:19:35,754 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.387 seconds (JVM running for 5.255)
+2020-09-19 23:44:52,476 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 26196 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-19 23:44:52,493 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-19 23:44:52,495 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-19 23:45:03,637 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 11.667 seconds (JVM running for 15.242)
+2020-09-19 23:45:59,447 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 3656 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-19 23:45:59,450 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-19 23:45:59,452 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-19 23:46:04,240 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.08 seconds (JVM running for 10.167)
+2020-09-19 23:50:13,432 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 28420 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-19 23:50:13,435 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-19 23:50:13,436 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-19 23:50:18,581 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.4 seconds (JVM running for 6.158)
+2020-09-19 23:51:42,392 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 20684 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-19 23:51:42,394 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-19 23:51:42,395 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-19 23:51:46,827 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.668 seconds (JVM running for 5.51)
+2020-09-19 23:52:13,394 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 25364 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-19 23:52:13,399 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-19 23:52:13,401 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-19 23:52:18,478 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.474 seconds (JVM running for 6.758)
+2020-09-19 23:53:08,612 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 30276 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-19 23:53:08,614 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-19 23:53:08,615 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-19 23:53:13,050 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.676 seconds (JVM running for 5.442)
+2020-09-19 23:53:49,357 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 10464 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-19 23:53:49,362 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-19 23:53:49,365 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-19 23:53:54,504 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.61 seconds (JVM running for 6.904)
+2020-09-20 00:22:07,971 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 14808 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-20 00:22:07,973 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-20 00:22:07,975 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-20 00:22:13,495 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.769 seconds (JVM running for 6.578)
+2020-09-23 14:00:45,867 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 35560 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-23 14:00:45,890 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-23 14:00:45,911 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-23 14:00:55,891 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 10.924 seconds (JVM running for 15.932)
+2020-09-27 15:24:03,148 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 38732 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-27 15:24:03,162 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-27 15:24:03,164 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-27 15:24:09,997 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 7.17 seconds (JVM running for 8.029)
+2020-09-27 16:23:42,076 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-2] Exception While Saving Job Message: Not allowed to create transaction on shared EntityManager - use Spring transactions or EJB CMT instead
+2020-09-27 16:39:26,492 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 40596 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-27 16:39:26,495 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-27 16:39:26,496 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-27 16:39:31,775 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.539 seconds (JVM running for 6.41)
+2020-09-27 16:39:34,149 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Saving Job Message: Not allowed to create transaction on shared EntityManager - use Spring transactions or EJB CMT instead
+2020-09-27 16:59:56,056 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 25028 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-27 16:59:56,058 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-27 16:59:56,059 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-27 17:00:00,804 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.05 seconds (JVM running for 5.925)
+2020-09-27 17:00:07,118 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Saving Job Message: org.hibernate.exception.GenericJDBCException: could not execute statement
+2020-09-27 17:20:21,714 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 36748 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-27 17:20:21,718 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-27 17:20:21,720 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-27 17:20:27,743 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.44 seconds (JVM running for 8.468)
+2020-09-27 18:22:26,097 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Saving Job Message: org.hibernate.exception.GenericJDBCException: could not execute statement
+2020-09-27 22:56:37,921 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 38580 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-27 22:56:37,925 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-27 22:56:37,927 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-27 22:56:43,015 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.448 seconds (JVM running for 6.5)
+2020-09-27 22:56:47,046 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Saving Job Message: Not allowed to create transaction on shared EntityManager - use Spring transactions or EJB CMT instead
+2020-09-27 23:42:07,151 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 37352 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-27 23:42:07,178 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-27 23:42:07,180 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-27 23:42:12,575 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.713 seconds (JVM running for 6.576)
+2020-09-27 23:42:15,549 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Saving Job Message: Not allowed to create transaction on shared EntityManager - use Spring transactions or EJB CMT instead
+2020-09-28 00:13:16,992 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 15532 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-28 00:13:16,996 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-28 00:13:16,998 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-28 00:25:23,617 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 16680 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-28 00:25:23,619 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-28 00:25:23,620 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-28 00:25:28,536 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.168 seconds (JVM running for 6.171)
+2020-09-30 19:53:30,360 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 40116 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-09-30 19:53:30,367 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-09-30 19:53:30,370 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-09-30 19:53:37,652 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 7.815 seconds (JVM running for 9.561)
+2020-10-15 21:09:28,876 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 25028 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-15 21:09:28,893 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-15 21:09:28,895 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-15 21:09:35,351 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.763 seconds (JVM running for 7.565)
+2020-10-15 21:18:22,569 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 4500 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-15 21:18:22,571 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-15 21:18:22,572 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-15 21:18:26,513 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.187 seconds (JVM running for 4.992)
+2020-10-17 11:39:31,420 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 13184 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-17 11:39:31,501 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-17 11:39:31,502 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-17 11:39:39,489 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 8.356 seconds (JVM running for 9.442)
+2020-10-18 12:02:43,313 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 30328 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-18 12:02:43,315 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-18 12:02:43,316 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-18 12:03:06,654 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 23.694 seconds (JVM running for 24.665)
+2020-10-18 12:16:05,053 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 12892 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-18 12:16:05,056 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-18 12:16:05,057 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-18 12:16:28,729 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 23.929 seconds (JVM running for 24.696)
+2020-10-18 12:30:46,554 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 31232 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-18 12:30:46,556 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-18 12:30:46,557 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-18 12:30:50,910 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.592 seconds (JVM running for 5.412)
+2020-10-22 00:10:44,359 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 44780 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:10:44,362 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:10:44,364 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:10:49,240 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.121 seconds (JVM running for 5.97)
+2020-10-22 00:13:04,427 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 33728 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:13:04,431 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:13:04,433 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:13:09,790 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.733 seconds (JVM running for 12.52)
+2020-10-22 00:14:37,949 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 29836 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:14:37,953 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:14:37,955 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:14:42,227 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.591 seconds (JVM running for 5.578)
+2020-10-22 00:15:11,721 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 46048 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:15:11,727 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:15:11,729 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:15:17,315 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.015 seconds (JVM running for 7.383)
+2020-10-22 00:21:43,577 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 46368 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:21:43,580 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:21:43,581 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:21:48,228 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.913 seconds (JVM running for 5.749)
+2020-10-22 00:21:53,202 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 00:22:23,211 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 40508 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:22:23,217 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:22:23,220 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:22:28,786 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.007 seconds (JVM running for 7.409)
+2020-10-22 00:32:46,524 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 36448 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:32:46,529 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:32:46,531 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:32:52,857 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.76 seconds (JVM running for 7.786)
+2020-10-22 00:38:08,419 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 44524 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:38:08,424 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:38:08,426 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:38:14,944 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.987 seconds (JVM running for 8.379)
+2020-10-22 00:39:54,769 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 4664 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:39:54,771 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:39:54,772 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:39:59,376 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.929 seconds (JVM running for 5.914)
+2020-10-22 00:43:09,361 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 14068 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:43:09,364 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:43:09,366 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:43:14,057 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.01 seconds (JVM running for 5.786)
+2020-10-22 00:43:48,891 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 45488 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:43:48,893 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:43:48,894 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:43:53,979 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.381 seconds (JVM running for 6.473)
+2020-10-22 00:43:54,769 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 00:49:09,667 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 39792 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 00:49:09,672 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 00:49:09,675 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 00:49:15,588 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.377 seconds (JVM running for 7.75)
+2020-10-22 01:28:13,501 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 37976 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 01:28:13,504 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 01:28:13,505 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 01:28:18,990 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.789 seconds (JVM running for 6.644)
+2020-10-22 01:28:19,883 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 01:29:29,638 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 46540 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 01:29:29,652 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 01:29:29,654 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 01:29:33,893 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.668 seconds (JVM running for 5.599)
+2020-10-22 01:30:28,301 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 01:31:30,247 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 44460 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 01:31:30,251 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 01:31:30,253 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 01:31:35,544 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.596 seconds (JVM running for 6.413)
+2020-10-22 01:31:36,292 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 01:33:40,359 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 24024 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 01:33:40,362 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 01:33:40,363 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 01:33:44,596 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.53 seconds (JVM running for 5.358)
+2020-10-22 01:33:45,674 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 01:33:51,424 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 01:36:05,917 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 26800 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 01:36:05,919 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 01:36:05,920 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 01:36:11,893 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.289 seconds (JVM running for 7.294)
+2020-10-22 01:36:12,463 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 01:38:25,746 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 4748 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 01:38:25,759 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 01:38:25,761 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 01:38:31,152 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.759 seconds (JVM running for 6.806)
+2020-10-22 01:38:31,970 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 01:39:28,642 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 33288 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 01:39:28,645 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 01:39:28,647 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 01:39:34,546 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.203 seconds (JVM running for 7.033)
+2020-10-22 01:39:42,821 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 19:31:26,462 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 11840 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 19:31:26,465 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 19:31:26,466 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 19:31:31,134 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.934 seconds (JVM running for 5.719)
+2020-10-22 19:31:31,822 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 19:33:44,666 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 28212 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 19:33:44,669 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 19:33:44,671 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 19:33:49,235 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.819 seconds (JVM running for 5.624)
+2020-10-22 19:33:51,356 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 19:36:08,168 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 44116 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 19:36:08,170 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 19:36:08,172 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 19:36:13,499 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.604 seconds (JVM running for 6.439)
+2020-10-22 19:36:14,261 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 19:37:10,811 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 11372 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 19:37:10,814 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 19:37:10,816 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 19:37:15,418 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.854 seconds (JVM running for 5.885)
+2020-10-22 19:37:16,121 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 19:37:43,096 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 47788 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 19:37:43,268 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 19:37:43,270 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 19:37:47,252 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.407 seconds (JVM running for 5.44)
+2020-10-22 19:38:34,899 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 47312 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 19:38:34,902 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 19:38:34,903 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 19:38:39,926 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.277 seconds (JVM running for 6.119)
+2020-10-22 19:38:40,586 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETALLJOBSBYCATEGORY
+2020-10-22 19:39:05,458 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 24536 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 19:39:05,461 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 19:39:05,462 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 19:39:10,103 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.9 seconds (JVM running for 5.722)
+2020-10-22 19:42:09,545 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 45104 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 19:42:09,549 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 19:42:09,550 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 19:42:13,830 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.691 seconds (JVM running for 5.598)
+2020-10-22 22:48:46,491 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 20672 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 22:48:46,494 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 22:48:46,497 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 22:48:51,383 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.223 seconds (JVM running for 5.973)
+2020-10-22 23:26:18,894 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 50120 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-22 23:26:18,897 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-22 23:26:18,898 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-22 23:26:24,171 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.571 seconds (JVM running for 6.409)
+2020-10-24 19:20:46,528 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 18272 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-24 19:20:46,531 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-24 19:20:46,533 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-24 19:20:52,273 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.06 seconds (JVM running for 7.18)
+2020-10-31 23:45:06,737 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 62416 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-10-31 23:45:06,757 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-10-31 23:45:06,758 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-10-31 23:45:12,017 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.582 seconds (JVM running for 6.377)
+2020-11-01 11:14:08,243 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 42828 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-01 11:14:08,260 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-01 11:14:08,261 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-01 11:14:14,020 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.035 seconds (JVM running for 6.89)
+2020-11-01 11:18:06,568 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 55492 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-01 11:18:06,570 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-01 11:18:06,571 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-01 11:18:10,377 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 4.056 seconds (JVM running for 4.88)
+2020-11-01 11:57:53,256 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 32976 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-01 11:57:53,259 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-01 11:57:53,260 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-01 11:57:58,426 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.43 seconds (JVM running for 6.241)
+2020-11-02 01:13:16,539 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 54656 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-02 01:13:16,542 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-02 01:13:16,544 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-02 01:13:21,704 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 5.536 seconds (JVM running for 6.905)
+2020-11-03 00:05:53,817 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 50500 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-03 00:05:53,832 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-03 00:05:53,835 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-03 00:05:59,799 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.234 seconds (JVM running for 7.228)
+2020-11-03 00:52:26,276 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 51976 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-03 00:52:26,280 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-03 00:52:26,281 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-03 00:52:32,971 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.962 seconds (JVM running for 7.993)
+2020-11-03 00:52:35,773 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method GETJOBDetail
+2020-11-03 00:52:47,180 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-2] Exception While Calling DB In Method GETJOBDetail
+2020-11-03 00:53:16,499 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 56656 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-03 00:53:16,503 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-03 00:53:16,505 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-03 00:53:24,203 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 8.127 seconds (JVM running for 19.332)
+2020-11-03 01:03:15,569 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 9512 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-03 01:03:15,572 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-03 01:03:15,573 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-03 01:03:22,072 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.94 seconds (JVM running for 7.818)
+2020-11-04 23:32:21,066 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 66328 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-04 23:32:21,132 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-04 23:32:21,135 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-04 23:32:27,660 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 6.893 seconds (JVM running for 7.946)

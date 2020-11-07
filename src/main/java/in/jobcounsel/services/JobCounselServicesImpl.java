@@ -9,9 +9,11 @@ import org.springframework.stereotype.Service;
 
 import in.jobcounsel.platform.exception.JobServicesException;
 import in.jobcounsel.services.core.JobCounselServicesCore;
+import in.jobcounsel.services.request.JobReq;
 import in.jobcounsel.services.response.Branch;
 import in.jobcounsel.services.response.Job;
 import in.jobcounsel.services.response.JobCount;
+import in.jobcounsel.services.response.JobDetail;
 import in.jobcounsel.services.response.Organization;
 import in.jobcounsel.services.response.Sector;
 
@@ -39,7 +41,7 @@ public class JobCounselServicesImpl implements JobCounselServices{
 	}
 
 	@Override
-	public Job getJobDetails(Long jobId) throws JobServicesException {
+	public JobDetail getJobDetails(Long jobId) throws JobServicesException {
 		return jobCounselServiceCore.getJobDetails(jobId);
 	}
 
@@ -56,6 +58,11 @@ public class JobCounselServicesImpl implements JobCounselServices{
 	@Override
 	public List<Organization> getAllOrganizations() throws JobServicesException {
 		return jobCounselServiceCore.getAllOrganization();
+	}
+
+	@Override
+	public Job saveJob(JobReq jobReq) throws JobServicesException {
+		return jobCounselServiceCore.saveJob(jobReq);
 	}
 
 }

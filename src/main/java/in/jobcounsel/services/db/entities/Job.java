@@ -18,7 +18,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Job")
 //@SecondaryTable(name="Organization")
-@SecondaryTables({ @SecondaryTable(name = "Organization"), @SecondaryTable(name = "Branch") })
+@SecondaryTables({ @SecondaryTable(name = "Organization"), @SecondaryTable(name = "Branch") ,@SecondaryTable(name ="Salary")})
 public class Job {
 
 	@Id
@@ -27,12 +27,19 @@ public class Job {
 	private int id;
 
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "orgid", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "orgid", nullable = false, insertable = true, updatable = true)
 	private Organization orgid;
 
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "branchid", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "branchid", nullable = false, insertable = true, updatable = true)
 	private Branch branchid;
+	
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "salaryid", nullable = false, insertable = true, updatable = true)
+	private Salary salaryID;
+	
+	@Column(name = "designation")
+	private String designation;
 
 	@Column(name = "qualification")
 	private String qualification;
@@ -42,6 +49,9 @@ public class Job {
 
 	@Column(name = "eligibilitycriteria")
 	private String eligibilitycriteria;
+	
+	@Column(name = "joblocation")
+	private String jobLocation;
 
 	@Column(name = "jobdetailslnk")
 	private String jobdetailslnk;
@@ -54,6 +64,9 @@ public class Job {
 
 	@Column(name = "selectionprocess")
 	private String selectionprocess;
+	
+	@Column(name = "totalvancancies")
+	private int totalVacancies;
 
 	@Column(name = "jobtype")
 	private String jobtype;
@@ -91,6 +104,22 @@ public class Job {
 		this.branchid = branchid;
 	}
 
+	public Salary getSalaryID() {
+		return salaryID;
+	}
+
+	public void setSalaryID(Salary salaryID) {
+		this.salaryID = salaryID;
+	}
+
+	public String getDesignation() {
+		return designation;
+	}
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
 	public String getQualification() {
 		return qualification;
 	}
@@ -113,6 +142,14 @@ public class Job {
 
 	public void setEligibilitycriteria(String eligibilitycriteria) {
 		this.eligibilitycriteria = eligibilitycriteria;
+	}
+
+	public String getJobLocation() {
+		return jobLocation;
+	}
+
+	public void setJobLocation(String jobLocation) {
+		this.jobLocation = jobLocation;
 	}
 
 	public String getJobdetailslnk() {
@@ -145,6 +182,14 @@ public class Job {
 
 	public void setSelectionprocess(String selectionprocess) {
 		this.selectionprocess = selectionprocess;
+	}
+
+	public int getTotalVacancies() {
+		return totalVacancies;
+	}
+
+	public void setTotalVacancies(int totalVacancies) {
+		this.totalVacancies = totalVacancies;
 	}
 
 	public String getJobtype() {

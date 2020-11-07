@@ -15,12 +15,14 @@ public interface DataAccess {
 	
 	public List<Job> getAllJobsByCategoryIdAndType(Integer categoryId,Integer typeId);
 	
-	public Job getJobDetail(Long jobId);
+	public List<Job> getJobDetail(List<Long> jobIds);
 	
 	public List<Sector> getAllSectors();
 	
 	public List<Branch> getAllBranches();
 	
 	public List<Organization> getAllOraganizations();
+	
+	public Job saveJob(Job job);
 
 }

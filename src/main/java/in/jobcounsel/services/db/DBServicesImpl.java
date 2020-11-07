@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import in.jobcounsel.services.db.core.DataAccess;
 import in.jobcounsel.services.db.entities.Branch;
@@ -32,8 +33,8 @@ public class DBServicesImpl implements DBServices {
 		return allJobsByCategoryAndType;
 	}
 
-	public Job getJobDetail(Long jobId) {
-		Job jobDetail = dataAccess.getJobDetail(jobId);
+	public List<Job> getJobDetail(List<Long> jobIds) {
+		List<Job> jobDetail = dataAccess.getJobDetail(jobIds);
 		return jobDetail;
 	}
 	
@@ -50,6 +51,13 @@ public class DBServicesImpl implements DBServices {
 	public List<Organization> getAllOrganization(){
 		List<Organization> allOrganizations = dataAccess.getAllOraganizations();
 		return allOrganizations;
+	}
+
+	@Override
+	@Transactional
+	public Job saveJob(Job job) {
+		Job savedJob = dataAccess.saveJob(job);
+		return savedJob;
 	}
 
 }
