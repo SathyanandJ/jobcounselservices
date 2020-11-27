@@ -1,6 +1,7 @@
 package in.jobcounsel.services.response;
 
 import java.util.Date;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -28,13 +29,13 @@ public class JobDetail {
 	private String designation;
 	@Getter
 	@Setter
-	private String qualification;
+	private List<String> qualification;
 	@Getter
 	@Setter
-	private String description;
+	private List<String> description;
 	@Getter
 	@Setter
-	private String eligibilityCriteria;
+	private List<String> eligibilityCriteria;
 	@Getter
 	@Setter
 	private String jobLocation;
@@ -49,7 +50,7 @@ public class JobDetail {
 	private Date jobApplyLastDate;
 	@Getter
 	@Setter
-	private String selectionProcess;
+	private List<String> selectionProcess;
 	@Getter
 	@Setter
 	private int totalVacancies;

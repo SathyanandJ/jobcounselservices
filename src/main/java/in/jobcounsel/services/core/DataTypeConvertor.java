@@ -58,7 +58,7 @@ public class DataTypeConvertor {
 			List<in.jobcounsel.services.db.entities.Branch> branches) {
 		List<Branch> convertedBranchList = new ArrayList<Branch>();
 		if (null != branches && branches.size() > 0) {
-			convertedBranchList = branches.parallelStream().map(dbBranch -> new Branch(Long.valueOf(dbBranch.getId()),
+			convertedBranchList = branches.parallelStream().map(dbBranch -> new Branch(Long.valueOf(dbBranch.getId()),Long.valueOf(dbBranch.getSectorId()),
 					dbBranch.getName(), dbBranch.getStamp_created())).collect(Collectors.toList());
 
 			return convertedBranchList;

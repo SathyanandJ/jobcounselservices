@@ -11,9 +11,9 @@ public interface DataAccess {
 	
 	public Long getAllJobs();
 	
-	public List<Job> getAllJobsByCategory(Integer category);
+	public List<Job> getAllJobsBySector(Integer sector);
 	
-	public List<Job> getAllJobsByCategoryIdAndType(Integer categoryId,Integer typeId);
+	public List<Job> getAllJobsBySectorAndBranch(Integer sectorId,Integer branchId);
 	
 	public List<Job> getJobDetail(List<Long> jobIds);
 	
@@ -24,5 +24,7 @@ public interface DataAccess {
 	public List<Organization> getAllOraganizations();
 	
 	public Job saveJob(Job job);
+
+	public List<Job> getJobsById(List<Long> jobIds);
 
 }

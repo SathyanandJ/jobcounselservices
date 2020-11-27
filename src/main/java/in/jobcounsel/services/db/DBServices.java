@@ -6,15 +6,14 @@ import in.jobcounsel.services.db.entities.Branch;
 import in.jobcounsel.services.db.entities.Job;
 import in.jobcounsel.services.db.entities.Organization;
 import in.jobcounsel.services.db.entities.Sector;
-import in.jobcounsel.services.request.JobReq;
 
 public interface DBServices {
 	
-	public List<Job> getAllJobsByCategory(int categoryId);
+	public List<Job> getAllJobsBySector(int sectorId);
 	
 	public Long getAllJobsCount();
 	
-	public List<Job> getAllJobsByCategoryAndType(int categoryId,long typeId);
+	public List<Job> getAllJobsBySectorAndBranch(int sectorId,int branchId);
 	
 	public List<Job> getJobDetail(List<Long> jobIds);
 	
@@ -25,5 +24,7 @@ public interface DBServices {
 	public List<Organization> getAllOrganization();
 	
 	public Job saveJob(Job job);
+
+	public List<Job> getJobsById(List<Long> jobIds);
 
 }

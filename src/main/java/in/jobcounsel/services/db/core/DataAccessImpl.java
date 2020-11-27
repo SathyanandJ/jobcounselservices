@@ -29,14 +29,16 @@ public class DataAccessImpl implements DataAccess {
 	@PersistenceUnit
 	private EntityManagerFactory entityManagerFactory;
 
-	private static final String GETALLJOBSBYCATEGORY = "SELECT job  from Job job where job.branchid.id = :category";
-	private static final String GETALLJOBSCOUNT = "select COUNT (job.qualification) from Job job";
+	private static final String GETALLJOBSBYSECTOR = "SELECT job  from Job job where job.orgid.sectorId.id = :sector";
+	private static final String GETALLJOBSBYSECTORANDBRANCH = "SELECT job  from Job job where job.orgid.sectorId.id = :sector AND job.branchid.id =:branch";
+	private static final String GETALLJOBSCOUNT = "select SUM(job.totalVacancies) as TotalJobs from Job job";
 	private static final String GETDETAILEDJOBINFOFROMDB = "SELECT job  from Job job where job.id in (:jobIds)";
+	private static final String GETALLJOBSBYID = "SELECT job  from Job job where job.id in (:jobids)";
 
 	Logger logger = LoggerFactory.getLogger(DataAccessImpl.class);
 
 	public Long getAllJobs() {
-		Query query = entityManager.createQuery(GETALLJOBSCOUNT);
+		Query query = entityManager.createQuery(GETALLJOBSCOUNT,Long.class);
 		try {
 			Long totalCount = (Long) query.getSingleResult();
 			return totalCount;
@@ -46,25 +48,30 @@ public class DataAccessImpl implements DataAccess {
 		return 0L;
 	}
 
-	public List<Job> getAllJobsByCategory(Integer category) {
+	public List<Job> getAllJobsBySector(Integer sectorId) {
 		List<Job> jobs = new ArrayList<>();
 		try {
-			Query query = entityManager.createQuery(GETALLJOBSBYCATEGORY, Job.class);
-			query.setParameter("category", category.intValue());
+			Query query = entityManager.createQuery(GETALLJOBSBYSECTOR, Job.class);
+			query.setParameter("sector", sectorId.intValue());
 
 			jobs = query.getResultList();
 		} catch (Exception e) {
-			logger.error("Exception While Calling DB In Method GETALLJOBSBYCATEGORY");
+			logger.error("Exception While Calling DB In Method GETALLJOBSBYSECTOR Error Message : {}", e.getLocalizedMessage());
 		}
 
 		return jobs;
 	}
 
-	public List<Job> getAllJobsByCategoryIdAndType(Integer categoryId, Integer typeId) {
-		Query query = entityManager.createQuery("select job from Job job", Job.class);
-
-		List<Job> jobs = query.getResultList();
-
+	public List<Job> getAllJobsBySectorAndBranch(Integer sectorId, Integer branchId) {
+		List<Job> jobs = new ArrayList<>();
+		try {
+			Query query = entityManager.createQuery(GETALLJOBSBYSECTORANDBRANCH, Job.class);
+			query.setParameter("sector", sectorId.intValue());
+			query.setParameter("branch", branchId.intValue());
+			jobs = query.getResultList();
+		} catch (Exception e) {
+			logger.error("Exception While Calling DB In Method getAllJobsBySectorAndBranch Error Message : {}", e.getLocalizedMessage());
+		}
 		return jobs;
 	}
 
@@ -79,7 +86,7 @@ public class DataAccessImpl implements DataAccess {
 
 			jobs = query.getResultList();
 		} catch (Exception e) {
-			logger.error("Exception While Calling DB In Method GETJOBDetail");
+			logger.error("Exception While Calling DB In Method GETJOBDetail Error Message : {}", e.getLocalizedMessage());
 		}
 
 		return jobs;
@@ -125,4 +132,18 @@ public class DataAccessImpl implements DataAccess {
 		return job;
 	}
 
+	@Override
+	public List<Job> getJobsById(List<Long> jobIds) {
+		List<Job> jobs = new ArrayList<>();
+		List<Integer> jobIDsAsInt = jobIds.stream()
+		           .map(Long::intValue).collect(Collectors.toList());
+		try {
+			Query query = entityManager.createQuery(GETALLJOBSBYID, Job.class);
+			query.setParameter("jobids", jobIDsAsInt);
+			jobs = query.getResultList();
+		} catch (Exception e) {
+			logger.error("Exception While Calling DB In Method getJobsById Error Message : {}", e.getLocalizedMessage());
+		}
+		return jobs;
+	}
 }

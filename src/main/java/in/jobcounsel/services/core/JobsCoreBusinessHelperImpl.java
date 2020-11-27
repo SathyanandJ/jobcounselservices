@@ -1,6 +1,7 @@
 package in.jobcounsel.services.core;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,12 +33,18 @@ public class JobsCoreBusinessHelperImpl implements JobsCoreBusinessHelper {
 		transformedJobData = jobDBData.parallelStream()
 				.map(jobData -> new JobDetail(jobData.getId(), jobData.getOrganizationName(), jobData.getBranchName(),
 						(jobData.getMaxSalary() == 0) ? jobData.getMinSalary() : jobData.getMaxSalary(),
-						jobData.getDesignation(), jobData.getQualification(), jobData.getDescription(),
-						jobData.getEligibilitycriteria(), jobData.getLocation(), jobData.getJobdetailsLnk(),
-						jobData.getJobApplyLnk(), jobData.getJobApplyLastDate(), jobData.getSelectionProcess(),
+						jobData.getDesignation(), convertStringTextToBrokenString(jobData.getQualification()), convertStringTextToBrokenString(jobData.getDescription()),
+						convertStringTextToBrokenString(jobData.getEligibilitycriteria()), jobData.getLocation(), jobData.getJobdetailsLnk(),
+						jobData.getJobApplyLnk(), jobData.getJobApplyLastDate(),convertStringTextToBrokenString(jobData.getSelectionProcess()),
 						jobData.getTotalVacancies(), jobData.getJobType(), jobData.getDateAdded()))
 				.collect(Collectors.toList());
 
 		return transformedJobData;
+	}
+	
+	private List<String> convertStringTextToBrokenString(String text){
+		String splitText[] = text.split("\\.");
+		List<String> responseText = Arrays.asList(splitText);
+		return responseText;
 	}
 }

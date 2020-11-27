@@ -31,13 +31,13 @@ public class JobCounselServicesImpl implements JobCounselServices{
 	}
 
 	@Override
-	public List<Job> getAllJobsByCategory(Integer categoryId) throws JobServicesException {
-		return jobCounselServiceCore.getAllJobsByCategory(categoryId);
+	public List<Job> getAllJobsBySector(Integer sectorId) throws JobServicesException {
+		return jobCounselServiceCore.getAllJobsBySector(sectorId);
 	}
 
 	@Override
-	public  List<Job> getAllJobs(Integer categoryId, Integer typeId) throws JobServicesException {
-		return jobCounselServiceCore.getAllJobs(categoryId, typeId);
+	public  List<Job> getAllJobsBySectorAndBranch(Integer sectorId, Integer branchId) throws JobServicesException {
+		return jobCounselServiceCore.getAllJobsBySectorAndBranch(sectorId, branchId);
 	}
 
 	@Override
@@ -63,6 +63,11 @@ public class JobCounselServicesImpl implements JobCounselServices{
 	@Override
 	public Job saveJob(JobReq jobReq) throws JobServicesException {
 		return jobCounselServiceCore.saveJob(jobReq);
+	}
+
+	@Override
+	public List<Job> searchJobs(String searchQuery, Long sectorID) throws JobServicesException {
+		return jobCounselServiceCore.searchJobs(searchQuery, sectorID);
 	}
 
 }

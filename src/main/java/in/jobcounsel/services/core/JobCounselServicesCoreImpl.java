@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import in.jobcounsel.platform.exception.JobServicesException;
 import in.jobcounsel.services.core.cache.AppServicesCache;
 import in.jobcounsel.services.core.models.JobCoreModel;
+import in.jobcounsel.services.core.search.DataSearchOperations;
 import in.jobcounsel.services.db.DBServices;
 import in.jobcounsel.services.request.JobReq;
 import in.jobcounsel.services.response.Branch;
@@ -18,6 +19,7 @@ import in.jobcounsel.services.response.JobCount;
 import in.jobcounsel.services.response.JobDetail;
 import in.jobcounsel.services.response.Organization;
 import in.jobcounsel.services.response.Sector;
+import in.jobcounsel.services.utility.AppUtility;
 
 @Service
 public class JobCounselServicesCoreImpl implements JobCounselServicesCore {
@@ -27,9 +29,12 @@ public class JobCounselServicesCoreImpl implements JobCounselServicesCore {
 
 	@Autowired
 	AppServicesCache cacheService;
-	
-	@Autowired 
+
+	@Autowired
 	JobsCoreBusinessHelper coreBusinessHelper;
+
+	@Autowired
+	DataSearchOperations dataSearch;
 
 	@Override
 	public JobCount getAllJobsCount() throws JobServicesException {
@@ -40,18 +45,23 @@ public class JobCounselServicesCoreImpl implements JobCounselServicesCore {
 	}
 
 	@Override
-	public List<Job> getAllJobsByCategory(Integer categoryId) throws JobServicesException {
-		List<in.jobcounsel.services.db.entities.Job> allJobsByCategory = dbServices.getAllJobsByCategory(categoryId);
-		List<JobCoreModel> convertedJobCoreObjectList = DataTypeConvertor.convertDBJobListToCoreServiceList(allJobsByCategory);
+	public List<Job> getAllJobsBySector(Integer sectorId) throws JobServicesException {
+		List<in.jobcounsel.services.db.entities.Job> allJobsBySector = dbServices.getAllJobsBySector(sectorId);
+		List<JobCoreModel> convertedJobCoreObjectList = DataTypeConvertor
+				.convertDBJobListToCoreServiceList(allJobsBySector);
 		List<Job> convertedJobList = coreBusinessHelper.extractJobDataFromDB(convertedJobCoreObjectList);
 		return convertedJobList;
 	}
 
 	@Override
-	public List<Job> getAllJobs(Integer categoryId, Integer typeId) throws JobServicesException {
-		List<in.jobcounsel.services.db.entities.Job> getAllJobsByCategoryAndType = dbServices
-				.getAllJobsByCategory(categoryId);
-		List<JobCoreModel> convertedJobCoreObjectList = DataTypeConvertor.convertDBJobListToCoreServiceList(getAllJobsByCategoryAndType);
+	public List<Job> getAllJobsBySectorAndBranch(Integer sectorId, Integer branchId) throws JobServicesException {
+		List<in.jobcounsel.services.db.entities.Job> getAllJobsByCategoryAndType = new ArrayList<>();
+		if (branchId != 0)
+			getAllJobsByCategoryAndType = dbServices.getAllJobsBySectorAndBranch(sectorId, branchId);
+		else
+			getAllJobsByCategoryAndType = dbServices.getAllJobsBySector(sectorId);
+		List<JobCoreModel> convertedJobCoreObjectList = DataTypeConvertor
+				.convertDBJobListToCoreServiceList(getAllJobsByCategoryAndType);
 		List<Job> convertedJobList = coreBusinessHelper.extractJobDataFromDB(convertedJobCoreObjectList);
 		return convertedJobList;
 	}
@@ -60,7 +70,8 @@ public class JobCounselServicesCoreImpl implements JobCounselServicesCore {
 	public JobDetail getJobDetails(Long jobId) throws JobServicesException {
 		List<in.jobcounsel.services.db.entities.Job> jobDBData = dbServices.getJobDetail(Arrays.asList(jobId));
 		if (jobDBData != null && !jobDBData.isEmpty()) {
-			List<JobCoreModel> convertedJobCoreObjectList = DataTypeConvertor.convertDBJobListToCoreServiceList(jobDBData);
+			List<JobCoreModel> convertedJobCoreObjectList = DataTypeConvertor
+					.convertDBJobListToCoreServiceList(jobDBData);
 			List<JobDetail> jobDetail = coreBusinessHelper.extractFullJobDataFromDB(convertedJobCoreObjectList);
 			if (null != jobDetail && jobDetail.size() > 0)
 				return jobDetail.get(0);
@@ -125,13 +136,31 @@ public class JobCounselServicesCoreImpl implements JobCounselServicesCore {
 	public Job saveJob(JobReq jobReq) throws JobServicesException {
 		List<Branch> allBranchs = getAllBranches();
 		List<Organization> allOrganization = getAllOrganization();
-		in.jobcounsel.services.db.entities.Job job = dbServices.saveJob(DataTypeConvertor.convertJobReqToJob(jobReq, allBranchs, allOrganization));
-		List<JobCoreModel> convertedJobCoreObjectList = DataTypeConvertor.convertDBJobListToCoreServiceList(Arrays.asList(job));
+		in.jobcounsel.services.db.entities.Job job = dbServices
+				.saveJob(DataTypeConvertor.convertJobReqToJob(jobReq, allBranchs, allOrganization));
+		List<JobCoreModel> convertedJobCoreObjectList = DataTypeConvertor
+				.convertDBJobListToCoreServiceList(Arrays.asList(job));
 		List<Job> jobData = coreBusinessHelper.extractJobDataFromDB(convertedJobCoreObjectList);
-		if(jobData!=null && !jobData.isEmpty())
+		if (jobData != null && !jobData.isEmpty())
 			return jobData.get(0);
 		else
 			return new Job();
+	}
+
+	@Override
+	public List<Job> searchJobs(String searchQuery, Long sectorID) throws JobServicesException {
+		if (!AppUtility.isStringAlphaNumeric(searchQuery))
+			throw new JobServicesException("Invalid Query String Entered", "JOB_SEARCH_INVALID_QUERY");
+
+		List<Long> jobIds = dataSearch.searchDataInIndex(searchQuery, sectorID.intValue());
+
+		List<in.jobcounsel.services.db.entities.Job> searchResultJobs = dbServices.getJobsById(jobIds);
+
+		List<JobCoreModel> searchJobResultList = DataTypeConvertor.convertDBJobListToCoreServiceList(searchResultJobs);
+
+		List<Job> searchResultconvertedJobList = coreBusinessHelper.extractJobDataFromDB(searchJobResultList);
+
+		return searchResultconvertedJobList;
 	}
 
 }

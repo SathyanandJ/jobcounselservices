@@ -12,7 +12,7 @@ public class Job {
 	private String qualification;
 	private String location;
 	private Date jobApplyLastDate;
-	private String details="details";
+	private String details="Details";
 
 	public Job() {
 

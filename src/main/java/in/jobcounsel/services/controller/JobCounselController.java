@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.async.DeferredResult;
 
@@ -120,11 +121,10 @@ public class JobCounselController {
 		ForkJoinPool.commonPool().submit(() -> {
 			JobCount jobCount = null;
 			try {
-				Thread.sleep(3000);
 				jobCount = jobCounselServices.getAllJobsCount();
 				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobCount));
-			} catch (JobServicesException | InterruptedException e) {
+			} catch (JobServicesException e) {
 				logger.error("Error While Processing Total Job Count");
 				jobCount = new JobCount();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
@@ -136,20 +136,20 @@ public class JobCounselController {
 	}
 	
 
-	@GetMapping(value = "jobs/{categoryid}")
-	public DeferredResult<ResponseEntity<?>> getAllJobsByCategory(
-			@PathVariable(name = "categoryid") Integer categoryId) {
+	@GetMapping(value = "jobs/{sectorid}")
+	public DeferredResult<ResponseEntity<?>> getAllJobsBySector(
+			@PathVariable(name = "sectorid") Integer sectorId) {
 		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(heavyWeightServiceTimeout);
 		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
 
 		ForkJoinPool.commonPool().submit(() -> {
 			List<Job> jobsList = null;
 			try {
-				jobsList = jobCounselServices.getAllJobsByCategory(categoryId);
+				jobsList = jobCounselServices.getAllJobsBySector(sectorId);
 				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobsList));
 			} catch (JobServicesException e) {
-				logger.error("Error While Processing Get AllJobs By Category");
+				logger.error("Error While Processing Get AllJobs By Sector");
 				jobsList = new ArrayList<Job>();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobsList));
@@ -159,20 +159,20 @@ public class JobCounselController {
 		return output;
 	}
 
-	@GetMapping(value = "jobs/{categoryid}/{typeid}")
-	public DeferredResult<ResponseEntity<?>> getAllJobsByCategoryAndType(
-			@PathVariable(name = "categoryid") Integer categoryId, @PathVariable(name = "typeid") Integer typeId) {
+	@GetMapping(value = "jobs/{sectorid}/{branchid}")
+	public DeferredResult<ResponseEntity<?>> getAllJobsBySectorAndBranch(
+			@PathVariable(name = "sectorid") Integer sectorId, @PathVariable(name = "branchid") Integer branchId) {
 		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(heavyWeightServiceTimeout);
 		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
 
 		ForkJoinPool.commonPool().submit(() -> {
 			List<Job> jobsList = null;
 			try {
-				jobsList = jobCounselServices.getAllJobs(categoryId, typeId);
+				jobsList = jobCounselServices.getAllJobsBySectorAndBranch(sectorId, branchId);
 				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobsList));
 			} catch (JobServicesException e) {
-				logger.error("Error While Processing GetAllJobs By Category And Type");
+				logger.error("Error While Processing GetAllJobs By Sector And Branch");
 				jobsList = new ArrayList<Job>();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobsList));
@@ -197,6 +197,27 @@ public class JobCounselController {
 				jobDetail = new JobDetail();
 				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
 						.body(jobDetail));
+			}
+		});
+		return output;
+	}
+	
+	@GetMapping(value = "jobs/search/{sectorid}")
+	public DeferredResult<ResponseEntity<?>> searchJobs(@RequestParam(value = "searchquery", required = false) String searchQuery,@PathVariable(name = "sectorid") Long sectorID) {
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(heavyWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			List<Job> jobsList = null;
+			try {
+				jobsList = jobCounselServices.searchJobs(searchQuery,sectorID);
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(jobsList));
+			} catch (JobServicesException e) {
+				logger.error("Error While Searching For Jobs Error Message : {}",e.getLocalizedMessage());
+				jobsList = new ArrayList<Job>();
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(jobsList));
 			}
 		});
 		return output;

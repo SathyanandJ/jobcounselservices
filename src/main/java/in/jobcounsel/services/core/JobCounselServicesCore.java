@@ -18,9 +18,9 @@ public interface JobCounselServicesCore {
 	
 	public JobCount getAllJobsCount() throws JobServicesException;
 
-	public List<Job> getAllJobsByCategory(Integer categoryId) throws JobServicesException;
+	public List<Job> getAllJobsBySector(Integer sectorId) throws JobServicesException;
 
-	public List<Job>  getAllJobs(Integer categoryId, Integer typeId) throws JobServicesException;
+	public List<Job>  getAllJobsBySectorAndBranch(Integer sectorId, Integer branchId) throws JobServicesException;
 
 	public JobDetail getJobDetails(Long jobId) throws JobServicesException;
 
@@ -31,5 +31,7 @@ public interface JobCounselServicesCore {
 	public List<Organization> getAllOrganization() throws JobServicesException;
 	
 	public Job saveJob(JobReq jobReq) throws JobServicesException;
+
+	public List<Job> searchJobs(String searchQuery, Long sectorID) throws JobServicesException;
 
 }

@@ -17,10 +17,13 @@ public class Branch {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	private int id;
-	
+
+	@Column(name = "sectorid")
+	private int sectorId;
+
 	@Column(name = "name")
 	private String name;
-	
+
 	@Column(name = "stamp_created")
 	private Timestamp stamp_created;
 
@@ -30,6 +33,14 @@ public class Branch {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public int getSectorId() {
+		return sectorId;
+	}
+
+	public void setSectorId(int sectorId) {
+		this.sectorId = sectorId;
 	}
 
 	public String getName() {
