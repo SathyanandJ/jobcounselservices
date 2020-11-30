@@ -67,7 +67,7 @@ public class LuceneDataSearchImpl implements LuceneDataSearch {
 		IndexReader reader = DirectoryReader.open(indexDirectory);
 		indexSearcher = new IndexSearcher(reader);
 
-		String fields[] = { "JOBLOCATION", "JOBQUALIFICATION","JOBORGANIZATION" };
+		String fields[] = { "JOBLOCATION", "JOBQUALIFICATION","JOBORGANIZATION","JOBDESIGNATION" };
 
 		queryParser = new MultiFieldQueryParser(fields, new StandardAnalyzer());
 	}

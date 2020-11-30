@@ -97,16 +97,20 @@ public class LuceneDataIndexerImpl implements LuceneDataIndexer {
 		String id = data.get("ID");
 		String jobLocation = data.get("JOBLOCATION");
 		String jobQualification = data.get("JOBQUALIFICATION");
+		String jobDesignation = data.get("JOBDESIGNATION");
 		String jobOrganization = data.get("JOBORGANIZATION");
+		
 
 		TextField idField = new TextField("ID", id, Field.Store.YES);
-		TextField jobLocationField = new TextField("JOBLOCATION", jobLocation, Field.Store.YES);
-		TextField jobQualificationField = new TextField("JOBQUALIFICATION", jobQualification, Field.Store.YES);
-		TextField jobOrganizationField = new TextField("JOBORGANIZATION", jobOrganization, Field.Store.YES);
+		TextField jobLocationField = new TextField("JOBLOCATION", jobLocation, Field.Store.NO);
+		TextField jobQualificationField = new TextField("JOBQUALIFICATION", jobQualification, Field.Store.NO);
+		TextField jobDesignationField = new TextField("JOBDESIGNATION", jobDesignation, Field.Store.NO);
+		TextField jobOrganizationField = new TextField("JOBORGANIZATION", jobOrganization, Field.Store.NO);
 
 		document.add(idField);
 		document.add(jobLocationField);
 		document.add(jobQualificationField);
+		document.add(jobDesignationField);
 		document.add(jobOrganizationField);
 
 		return document;

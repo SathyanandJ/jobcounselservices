@@ -34,6 +34,7 @@ public class DataAccessImpl implements DataAccess {
 	private static final String GETALLJOBSCOUNT = "select SUM(job.totalVacancies) as TotalJobs from Job job";
 	private static final String GETDETAILEDJOBINFOFROMDB = "SELECT job  from Job job where job.id in (:jobIds)";
 	private static final String GETALLJOBSBYID = "SELECT job  from Job job where job.id in (:jobids)";
+	private static final String GETALLJOBSBYIDANDSECTORID = "SELECT job  from Job job where job.orgid.sectorId.id = :sector AND job.id in (:jobids)";
 
 	Logger logger = LoggerFactory.getLogger(DataAccessImpl.class);
 
@@ -139,6 +140,22 @@ public class DataAccessImpl implements DataAccess {
 		           .map(Long::intValue).collect(Collectors.toList());
 		try {
 			Query query = entityManager.createQuery(GETALLJOBSBYID, Job.class);
+			query.setParameter("jobids", jobIDsAsInt);
+			jobs = query.getResultList();
+		} catch (Exception e) {
+			logger.error("Exception While Calling DB In Method getJobsById Error Message : {}", e.getLocalizedMessage());
+		}
+		return jobs;
+	}
+
+	@Override
+	public List<Job> getJobsByIdAndSectorId(List<Long> jobIds, Long sectorID) {
+		List<Job> jobs = new ArrayList<>();
+		List<Integer> jobIDsAsInt = jobIds.stream()
+		           .map(Long::intValue).collect(Collectors.toList());
+		try {
+			Query query = entityManager.createQuery(GETALLJOBSBYIDANDSECTORID, Job.class);
+			query.setParameter("sector", sectorID.intValue());
 			query.setParameter("jobids", jobIDsAsInt);
 			jobs = query.getResultList();
 		} catch (Exception e) {

@@ -27,4 +27,6 @@ public interface DBServices {
 
 	public List<Job> getJobsById(List<Long> jobIds);
 
+	public List<Job> getJobsByIdAndSectorId(List<Long> jobIds, Long sectorID);
+
 }

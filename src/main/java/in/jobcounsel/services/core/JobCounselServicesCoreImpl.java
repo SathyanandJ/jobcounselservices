@@ -153,13 +153,10 @@ public class JobCounselServicesCoreImpl implements JobCounselServicesCore {
 			throw new JobServicesException("Invalid Query String Entered", "JOB_SEARCH_INVALID_QUERY");
 
 		List<Long> jobIds = dataSearch.searchDataInIndex(searchQuery, sectorID.intValue());
-
-		List<in.jobcounsel.services.db.entities.Job> searchResultJobs = dbServices.getJobsById(jobIds);
-
+		List<in.jobcounsel.services.db.entities.Job> searchResultJobs = dbServices.getJobsByIdAndSectorId(jobIds,
+				sectorID);
 		List<JobCoreModel> searchJobResultList = DataTypeConvertor.convertDBJobListToCoreServiceList(searchResultJobs);
-
 		List<Job> searchResultconvertedJobList = coreBusinessHelper.extractJobDataFromDB(searchJobResultList);
-
 		return searchResultconvertedJobList;
 	}
 

@@ -83,6 +83,7 @@ public class ApplicationStartupOperations implements InitializingBean {
 		dataMap.put("ID", String.valueOf(job.getId()));
 		dataMap.put("JOBLOCATION", job.getLocation());
 		dataMap.put("JOBQUALIFICATION", job.getQualification());
+		dataMap.put("JOBDESIGNATION", job.getDesignation());
 		dataMap.put("JOBORGANIZATION", job.getOrganizationName());
 
 		return dataMap;

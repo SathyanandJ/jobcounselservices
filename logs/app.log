@@ -507,3 +507,38 @@
 2020-11-27 16:26:37,009 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
 2020-11-27 16:26:45,421 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 28
 2020-11-27 16:26:46,115 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 9.403 seconds (JVM running for 10.163)
+2020-11-27 21:55:58,021 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 210 hits
+2020-11-27 22:01:23,032 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 210 hits
+2020-11-27 23:29:35,943 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 210 hits
+2020-11-27 23:30:58,944 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 50 hits
+2020-11-27 23:54:08,361 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 6688 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-27 23:54:08,366 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-27 23:54:08,368 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-27 23:54:43,665 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 28
+2020-11-27 23:54:44,783 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 36.819 seconds (JVM running for 38.436)
+2020-11-27 23:55:01,253 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 231 hits
+2020-11-28 06:57:44,471 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 40996 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-28 06:57:44,586 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-28 06:57:44,588 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-28 06:58:12,312 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 28
+2020-11-28 06:58:13,736 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 29.512 seconds (JVM running for 30.775)
+2020-11-28 06:58:40,142 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 252 hits
+2020-11-28 07:01:31,191 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 6932 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-28 07:01:31,194 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-28 07:01:31,194 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-28 07:01:40,874 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 28
+2020-11-28 07:01:41,616 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 10.681 seconds (JVM running for 11.464)
+2020-11-28 07:01:48,470 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 273 hits
+2020-11-28 07:01:57,104 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 273 hits
+2020-11-28 07:02:21,246 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 26 hits
+2020-11-28 07:02:39,408 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 91 hits
+2020-11-28 07:02:54,020 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 26 hits
+2020-11-28 13:14:33,282 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 26 hits
+2020-11-28 13:14:35,504 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 26 hits
+2020-11-30 11:14:53,326 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 46868 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-11-30 11:14:53,556 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-11-30 11:14:53,558 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-11-30 11:15:12,535 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 28
+2020-11-30 11:15:13,586 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 20.551 seconds (JVM running for 22.776)
+2020-11-30 11:20:47,632 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 28 hits
+2020-11-30 11:20:59,126 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 70 hits

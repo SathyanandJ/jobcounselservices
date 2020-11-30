@@ -66,4 +66,10 @@ public class DBServicesImpl implements DBServices {
 		return jobs;
 	}
 
+	@Override
+	public List<Job> getJobsByIdAndSectorId(List<Long> jobIds, Long sectorID) {
+		List<Job> jobs = dataAccess.getJobsByIdAndSectorId(jobIds,sectorID);
+		return jobs;
+	}
+
 }
