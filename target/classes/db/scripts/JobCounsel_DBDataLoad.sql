@@ -4,6 +4,48 @@ insert into Sector(name) values('Private Sector(Non-IT) Jobs');
 insert into Sector(name) values('Private Sector(IT) Jobs');
 insert into Sector(name) values('State Government Jobs');
 
+insert into States(statename,stateabbr) values('India','IN');
+
+insert into States(statename,stateabbr) values('Andhra Pradesh','AP');
+insert into States(statename,stateabbr) values('Arunachal Pradesh','AR');
+insert into States(statename,stateabbr) values('Assam','AS');
+insert into States(statename,stateabbr) values('Bihar','BR');
+insert into States(statename,stateabbr) values('Chhattisgarh','CG');
+insert into States(statename,stateabbr) values('Goa','GA');
+insert into States(statename,stateabbr) values('Gujarat','GJ');
+insert into States(statename,stateabbr) values('Haryana','HR');
+insert into States(statename,stateabbr) values('Himachal Pradesh','HP');
+insert into States(statename,stateabbr) values('Jammu and Kashmir','JK');
+
+insert into States(statename,stateabbr) values('Jharkhand','JH');
+insert into States(statename,stateabbr) values('Karnataka','KA');
+insert into States(statename,stateabbr) values('Kerala','KL');
+insert into States(statename,stateabbr) values('Madhya Pradesh','MP');
+insert into States(statename,stateabbr) values('Maharashtra','MH');
+insert into States(statename,stateabbr) values('Manipur','MN');
+insert into States(statename,stateabbr) values('Meghalaya','ML');
+insert into States(statename,stateabbr) values('Mizoram','MZ');
+insert into States(statename,stateabbr) values('Nagaland','NL');
+insert into States(statename,stateabbr) values('Orissa','OR');
+
+insert into States(statename,stateabbr) values('Punjab','PB');
+insert into States(statename,stateabbr) values('Rajasthan','RJ');
+insert into States(statename,stateabbr) values('Sikkim','SK');
+insert into States(statename,stateabbr) values('Tamil Nadu','TN');
+insert into States(statename,stateabbr) values('Tripura','TR');
+insert into States(statename,stateabbr) values('Uttarakhand','UK');
+insert into States(statename,stateabbr) values('Uttar Pradesh','UP');
+insert into States(statename,stateabbr) values('West Bengal','WB');
+insert into States(statename,stateabbr) values('Tripura','TR');
+insert into States(statename,stateabbr) values('Andaman and Nicobar Islands','AN');
+
+insert into States(statename,stateabbr) values('Chandigarh','CH');
+insert into States(statename,stateabbr) values('Dadra and Nagar Haveli','DH');
+insert into States(statename,stateabbr) values('Daman and Diu','DD');
+insert into States(statename,stateabbr) values('Delhi','DL');
+insert into States(statename,stateabbr) values('Lakshadweep','LD');
+insert into States(statename,stateabbr) values('Pondicherry','PY');
+
 
 insert into Branch(sectorid,name) values(1,'Railway');
 insert into Branch(sectorid,name) values(1,'SSC');

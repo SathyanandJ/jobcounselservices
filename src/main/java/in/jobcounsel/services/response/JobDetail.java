@@ -20,10 +20,16 @@ public class JobDetail {
 	private String organizationName;
 	@Getter
 	@Setter
+	private String organizationURL;
+	@Getter
+	@Setter
 	private String branchName;
 	@Getter
 	@Setter
 	private int salaryPerMonth;
+	@Getter
+	@Setter
+	private String jobTitle;
 	@Getter
 	@Setter
 	private String designation;
@@ -47,7 +53,7 @@ public class JobDetail {
 	private String jobapplylnk;
 	@Getter
 	@Setter
-	private Date jobApplyLastDate;
+	private String jobApplyLastDate;
 	@Getter
 	@Setter
 	private List<String> selectionProcess;

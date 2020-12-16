@@ -28,12 +28,12 @@ public class DataTypeConvertor {
 		if (null != jobs && jobs.size() > 0) {
 			convertedJobList = jobs.parallelStream()
 					.map(dbJob -> new JobCoreModel(Long.valueOf(dbJob.getId()), dbJob.getOrgid().getName(),
-							dbJob.getBranchid().getName(), dbJob.getSalaryID().getMinSalary(),
-							dbJob.getSalaryID().getMaxSalary(), dbJob.getDesignation(), dbJob.getQualification(),
-							dbJob.getDescription(), dbJob.getEligibilitycriteria(), dbJob.getJobLocation(),
-							dbJob.getJobdetailslnk(), dbJob.getJobapplylnk(), dbJob.getJobApplyLastDate(),
-							dbJob.getSelectionprocess(), dbJob.getTotalVacancies(), dbJob.getJobtype(), dbJob.getTags(),
-							dbJob.getStamp_created()))
+							dbJob.getOrgid().getOrgURL(), dbJob.getBranchid().getName(),
+							dbJob.getSalaryID().getMinSalary(), dbJob.getSalaryID().getMaxSalary(), dbJob.getJobTitle(),
+							dbJob.getDesignation(), dbJob.getQualification(), dbJob.getDescription(),
+							dbJob.getEligibilitycriteria(), dbJob.getJobLocation(), dbJob.getJobdetailslnk(),
+							dbJob.getJobapplylnk(), dbJob.getJobApplyLastDate(), dbJob.getSelectionprocess(),
+							dbJob.getTotalVacancies(), dbJob.getJobtype(), dbJob.getTags(), dbJob.getStamp_created()))
 					.collect(Collectors.toList());
 
 			return convertedJobList;
@@ -58,8 +58,10 @@ public class DataTypeConvertor {
 			List<in.jobcounsel.services.db.entities.Branch> branches) {
 		List<Branch> convertedBranchList = new ArrayList<Branch>();
 		if (null != branches && branches.size() > 0) {
-			convertedBranchList = branches.parallelStream().map(dbBranch -> new Branch(Long.valueOf(dbBranch.getId()),Long.valueOf(dbBranch.getSectorId()),
-					dbBranch.getName(), dbBranch.getStamp_created())).collect(Collectors.toList());
+			convertedBranchList = branches
+					.parallelStream().map(dbBranch -> new Branch(Long.valueOf(dbBranch.getId()),
+							Long.valueOf(dbBranch.getSectorId()), dbBranch.getName(), dbBranch.getStamp_created()))
+					.collect(Collectors.toList());
 
 			return convertedBranchList;
 		}

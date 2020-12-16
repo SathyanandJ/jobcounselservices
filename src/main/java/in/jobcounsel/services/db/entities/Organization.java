@@ -31,6 +31,9 @@ public class Organization {
 	@Column(name = "name")
 	private String name;
 
+	@Column(name = "orgurl")
+	private String orgURL;
+
 	@Column(name = "stamp_created")
 	private Timestamp stamp_created;
 
@@ -59,6 +62,14 @@ public class Organization {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOrgURL() {
+		return orgURL;
+	}
+
+	public void setOrgURL(String orgURL) {
+		this.orgURL = orgURL;
 	}
 
 	public Timestamp getStamp_created() {

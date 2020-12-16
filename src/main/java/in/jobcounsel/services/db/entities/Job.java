@@ -18,7 +18,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Job")
 //@SecondaryTable(name="Organization")
-@SecondaryTables({ @SecondaryTable(name = "Organization"), @SecondaryTable(name = "Branch") ,@SecondaryTable(name ="Salary")})
+@SecondaryTables({ @SecondaryTable(name = "Organization"), @SecondaryTable(name = "Branch"),
+		@SecondaryTable(name = "Salary") })
 public class Job {
 
 	@Id
@@ -33,11 +34,14 @@ public class Job {
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "branchid", nullable = false, insertable = true, updatable = true)
 	private Branch branchid;
-	
+
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "salaryid", nullable = false, insertable = true, updatable = true)
 	private Salary salaryID;
-	
+
+	@Column(name = "jobtitle")
+	private String jobTitle;
+
 	@Column(name = "designation")
 	private String designation;
 
@@ -49,7 +53,7 @@ public class Job {
 
 	@Column(name = "eligibilitycriteria")
 	private String eligibilitycriteria;
-	
+
 	@Column(name = "joblocation")
 	private String jobLocation;
 
@@ -64,7 +68,7 @@ public class Job {
 
 	@Column(name = "selectionprocess")
 	private String selectionprocess;
-	
+
 	@Column(name = "totalvancancies")
 	private int totalVacancies;
 
@@ -110,6 +114,14 @@ public class Job {
 
 	public void setSalaryID(Salary salaryID) {
 		this.salaryID = salaryID;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
 	}
 
 	public String getDesignation() {
