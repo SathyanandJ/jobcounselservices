@@ -11,7 +11,7 @@ public class Job {
 	private String designation;
 	private String qualification;
 	private String location;
-	private Date jobApplyLastDate;
+	private String jobApplyLastDate;
 	private String details="Details";
 
 	public Job() {
@@ -19,7 +19,7 @@ public class Job {
 	}
 
 	public Job(Long id, String orgName, String branchName, int salaryPerMonth, String designation, String qualification,
-			String jobLocation, Date jobApplyLastDate) {
+			String jobLocation, String jobApplyLastDate) {
 		this.id = id;
 		this.organizationName = orgName;
 		this.branchName = branchName;
@@ -86,11 +86,11 @@ public class Job {
 		this.location = location;
 	}
 
-	public Date getJobApplyLastDate() {
+	public String getJobApplyLastDate() {
 		return jobApplyLastDate;
 	}
 
-	public void setJobApplyLastDate(Date jobApplyLastDate) {
+	public void setJobApplyLastDate(String jobApplyLastDate) {
 		this.jobApplyLastDate = jobApplyLastDate;
 	}
 

@@ -696,3 +696,344 @@
 2020-12-12 09:27:33,167 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
 2020-12-12 09:27:42,348 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 28
 2020-12-12 09:27:43,040 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 10.129 seconds (JVM running for 10.938)
+2020-12-19 00:10:17,307 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 23328 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-19 00:10:17,325 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-19 00:10:17,327 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-19 00:10:25,394 ERROR in.jobcounsel.services.db.core.DataAccessImpl [main] Exception While Calling DB In Method GETALLJOBSBYSECTOR Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-19 00:10:25,399 ERROR in.jobcounsel.services.db.core.DataAccessImpl [main] Exception While Calling DB In Method GETALLJOBSBYSECTOR Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-19 00:10:25,400 ERROR in.jobcounsel.services.db.core.DataAccessImpl [main] Exception While Calling DB In Method GETALLJOBSBYSECTOR Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-19 00:10:25,405 ERROR in.jobcounsel.services.db.core.DataAccessImpl [main] Exception While Calling DB In Method GETALLJOBSBYSECTOR Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-19 00:10:25,407 ERROR in.jobcounsel.services.db.core.DataAccessImpl [main] Exception While Calling DB In Method GETALLJOBSBYSECTOR Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-19 00:10:25,407 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 0
+2020-12-19 00:10:26,651 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 10.204 seconds (JVM running for 15.139)
+2020-12-19 00:12:27,028 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 3208 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-19 00:12:27,032 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-19 00:12:27,033 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-19 00:12:35,372 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 35
+2020-12-19 00:12:36,111 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 9.395 seconds (JVM running for 10.242)
+2020-12-27 12:33:11,083 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 6164 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-27 12:33:11,102 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-27 12:33:11,104 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-27 12:33:36,794 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-27 12:33:39,935 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 30.764 seconds (JVM running for 33.703)
+2020-12-27 12:40:05,273 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 27 hits
+2020-12-27 12:40:27,767 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 530 hits
+2020-12-27 12:40:57,428 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 27 hits
+2020-12-27 12:41:10,244 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 530 hits
+2020-12-27 12:41:30,848 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 34 hits
+2020-12-27 12:55:58,473 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 134 hits
+2020-12-27 12:55:59,583 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 530 hits
+2020-12-27 13:01:34,948 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 27 hits
+2020-12-27 13:02:03,539 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 14 hits
+2020-12-27 13:02:32,443 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 34 hits
+2020-12-27 13:02:47,316 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 27 hits
+2020-12-27 13:03:36,431 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-0] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 13:03:36,431 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 13:12:23,065 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 7 hits
+2020-12-27 17:15:02,824 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 543 hits
+2020-12-27 17:17:55,341 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 9 hits
+2020-12-27 17:28:36,328 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 10 hits
+2020-12-27 17:29:47,057 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 27 hits
+2020-12-27 17:31:10,413 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 2 hits
+2020-12-27 17:31:33,153 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 26 hits
+2020-12-27 17:31:50,469 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 122 hits
+2020-12-27 17:32:10,168 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 10 hits
+2020-12-27 17:32:46,766 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 15 hits
+2020-12-27 20:12:59,850 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 13700 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-27 20:12:59,854 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-27 20:12:59,856 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-27 20:13:04,408 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Initialize Indexing In Lucene Message : Lock held by another program: C:\testing\lucene\write.lock
+2020-12-27 20:13:04,408 DEBUG in.jobcounsel.platform.exception.JobServicesException [main] ErrorMessage: Lucene IO Exception, ErrorCode : LUCENE_IO_EXCEPTION
+2020-12-27 20:13:04,409 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Error Occured While deleting the index Failed
+2020-12-27 20:13:04,409 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Reset Index Operation failed Error Message : null
+2020-12-27 20:13:04,919 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Initialize Indexing In Lucene Message : Lock held by another program: C:\testing\lucene\write.lock
+2020-12-27 20:13:04,920 DEBUG in.jobcounsel.platform.exception.JobServicesException [main] ErrorMessage: Lucene IO Exception, ErrorCode : LUCENE_IO_EXCEPTION
+2020-12-27 20:13:04,920 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Indexing In Lucene Message : null
+2020-12-27 20:13:04,920 DEBUG in.jobcounsel.platform.exception.JobServicesException [main] ErrorMessage: Lucene Adding Data To Index Exception, ErrorCode : LUCENE_ADD_DATA_EXCEPTION
+2020-12-27 20:13:04,920 ERROR in.jobcounsel.services.core.search.lucene.DataSearchOperationsLucene [main] Error Occured While adding Data To Index
+2020-12-27 20:13:04,920 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-27 20:13:36,572 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 23768 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-27 20:13:36,575 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-27 20:13:36,576 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-27 20:13:47,611 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-27 20:13:48,826 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 12.491 seconds (JVM running for 13.254)
+2020-12-27 20:14:27,859 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 3 hits
+2020-12-27 20:14:50,378 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 547 hits
+2020-12-27 20:18:18,307 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 21 hits
+2020-12-27 20:19:16,942 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 43 hits
+2020-12-27 20:42:46,074 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 2 hits
+2020-12-27 20:43:17,125 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 6 hits
+2020-12-27 20:43:25,390 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 6 hits
+2020-12-27 20:43:27,977 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 6 hits
+2020-12-27 20:45:30,644 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 0 hits
+2020-12-27 20:45:30,765 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-0] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-27 20:45:36,883 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 19 hits
+2020-12-27 21:11:14,673 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 12 hits
+2020-12-27 21:11:30,083 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 12 hits
+2020-12-27 22:31:59,279 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 543 hits
+2020-12-27 22:32:33,254 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 543 hits
+2020-12-27 22:32:48,176 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 543 hits
+2020-12-27 22:32:49,469 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 543 hits
+2020-12-27 23:05:38,553 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 5 hits
+2020-12-27 23:05:55,513 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 0 hits
+2020-12-27 23:05:55,517 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-2] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-27 23:06:20,087 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-3] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:06:20,087 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-3] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:08:11,992 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 60 hits
+2020-12-27 23:08:44,297 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-0] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:08:44,297 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:10:18,931 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-3] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:10:18,931 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-3] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:27:13,622 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 13812 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-27 23:27:13,625 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-27 23:27:13,626 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-27 23:27:25,400 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-27 23:27:26,162 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 12.785 seconds (JVM running for 13.571)
+2020-12-27 23:27:54,509 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-0] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:27:54,509 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:28:40,533 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 28 hits
+2020-12-27 23:28:49,319 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-0] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:28:49,320 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:30:17,640 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 28 hits
+2020-12-27 23:30:50,725 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 28 hits
+2020-12-27 23:30:58,424 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-3] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:30:58,425 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-3] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:32:35,686 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 19208 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-27 23:32:35,690 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-27 23:32:35,691 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-27 23:32:48,308 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-27 23:32:49,409 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 14.017 seconds (JVM running for 18.522)
+2020-12-27 23:34:10,661 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-0] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:34:10,661 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:39:08,163 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-1] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:39:08,164 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-1] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:48:47,298 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 19328 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-27 23:48:47,300 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-27 23:48:47,301 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-27 23:48:57,068 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-27 23:48:57,799 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 10.807 seconds (JVM running for 11.566)
+2020-12-27 23:49:18,756 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 0 hits
+2020-12-27 23:49:18,783 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-0] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-27 23:49:28,697 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 36 hits
+2020-12-27 23:53:59,384 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-0] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:53:59,385 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:54:37,479 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 36 hits
+2020-12-27 23:56:07,252 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 36 hits
+2020-12-27 23:56:15,786 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 0 hits
+2020-12-27 23:56:15,792 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-3] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-27 23:57:08,125 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-0] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:57:08,126 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:57:15,525 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-1] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:57:15,526 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-1] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:57:38,229 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-3] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:57:38,231 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-3] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:57:44,166 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-2] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:57:44,167 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-2] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-27 23:59:02,425 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 36 hits
+2020-12-27 23:59:13,525 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-0] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-27 23:59:13,526 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-28 00:01:09,646 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 36 hits
+2020-12-28 00:01:14,038 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-2] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-28 00:01:14,038 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-2] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-28 00:01:32,603 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-3] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-28 00:01:32,604 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-3] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-28 00:02:51,222 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 36 hits
+2020-12-28 00:03:00,963 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 36 hits
+2020-12-28 00:03:05,402 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 36 hits
+2020-12-28 00:04:00,214 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 150 hits
+2020-12-28 00:04:29,878 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 0 hits
+2020-12-28 00:04:29,881 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-0] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-28 00:04:31,276 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 0 hits
+2020-12-28 00:04:31,281 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-0] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-28 00:05:09,767 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 36 hits
+2020-12-28 00:05:31,801 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 36 hits
+2020-12-28 00:06:56,829 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 162 hits
+2020-12-28 00:07:18,041 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 150 hits
+2020-12-28 00:07:23,894 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 150 hits
+2020-12-28 00:09:41,721 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 22 hits
+2020-12-28 12:20:51,927 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 608 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-28 12:20:51,930 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-28 12:20:51,931 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-28 12:21:03,962 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-28 12:21:05,036 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 13.435 seconds (JVM running for 14.442)
+2020-12-28 13:32:43,725 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 127 hits
+2020-12-28 13:32:53,450 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 595 hits
+2020-12-28 13:33:07,042 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 595 hits
+2020-12-28 13:33:18,549 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 0 hits
+2020-12-28 13:33:18,585 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-0] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-28 13:33:35,331 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 0 hits
+2020-12-28 13:33:35,334 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-3] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-28 13:33:47,901 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 595 hits
+2020-12-28 13:33:50,295 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 595 hits
+2020-12-28 13:33:52,389 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 595 hits
+2020-12-28 13:33:59,511 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 595 hits
+2020-12-28 13:34:07,169 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 0 hits
+2020-12-28 13:34:07,172 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-28 13:34:39,515 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 595 hits
+2020-12-28 13:34:49,796 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 87 hits
+2020-12-28 13:35:10,855 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 595 hits
+2020-12-28 13:35:12,530 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 595 hits
+2020-12-28 13:35:38,037 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 0 hits
+2020-12-28 13:35:38,041 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-2] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-28 13:36:52,977 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 0 hits
+2020-12-28 13:36:52,981 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-2] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-12-28 13:37:21,689 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 595 hits
+2020-12-28 13:38:11,832 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 127 hits
+2020-12-28 13:41:39,680 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 483 hits
+2020-12-28 13:42:04,290 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 483 hits
+2020-12-28 13:42:16,435 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 26 hits
+2020-12-28 13:42:22,907 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 595 hits
+2020-12-28 13:42:51,585 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 103 hits
+2020-12-28 13:47:51,717 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 127 hits
+2020-12-28 13:48:09,383 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 127 hits
+2020-12-28 13:48:10,823 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 127 hits
+2020-12-28 13:48:12,078 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 127 hits
+2020-12-28 13:48:19,355 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 127 hits
+2020-12-28 13:54:30,894 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 127 hits
+2020-12-28 13:54:46,199 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 595 hits
+2020-12-28 13:54:57,689 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 127 hits
+2020-12-28 13:55:10,360 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 127 hits
+2020-12-28 13:55:23,364 DEBUG in.jobcounsel.platform.exception.JobServicesException [ForkJoinPool.commonPool-worker-2] ErrorMessage: Invalid Query String Entered, ErrorCode : JOB_SEARCH_INVALID_QUERY
+2020-12-28 13:55:23,364 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-2] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2020-12-28 13:58:34,826 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 4224 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-28 13:58:34,829 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-28 13:58:34,830 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-28 13:58:46,452 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-28 13:58:47,178 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 12.639 seconds (JVM running for 13.375)
+2020-12-28 13:59:12,752 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 128 hits
+2020-12-28 13:59:26,805 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 128 hits
+2020-12-28 13:59:45,417 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 128 hits
+2020-12-28 13:59:52,973 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 608 hits
+2020-12-28 14:00:33,526 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 608 hits
+2020-12-28 14:00:46,791 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 56 hits
+2020-12-28 14:01:17,164 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 608 hits
+2020-12-28 14:03:47,834 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 17340 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-28 14:03:47,838 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-28 14:03:47,839 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-28 14:03:59,631 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-28 14:04:00,358 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 12.769 seconds (JVM running for 13.58)
+2020-12-28 14:04:51,907 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 13 hits
+2020-12-28 14:09:38,800 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 1 hits
+2020-12-28 14:09:45,493 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 7 hits
+2020-12-28 14:10:40,116 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 13 hits
+2020-12-28 14:11:03,083 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 4 hits
+2020-12-28 14:11:40,244 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-3] Total Search Result : 4 hits
+2020-12-28 14:17:19,872 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 1 hits
+2020-12-28 15:16:02,936 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 8 hits
+2020-12-28 15:16:18,910 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 8 hits
+2020-12-28 15:47:54,264 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 6928 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-28 15:47:54,268 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-28 15:47:54,269 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-28 15:48:06,925 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-28 15:48:07,834 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 13.902 seconds (JVM running for 14.658)
+2020-12-28 16:04:04,567 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 16796 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-28 16:04:04,569 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-28 16:04:04,571 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-28 16:04:15,807 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-28 16:04:16,657 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 12.343 seconds (JVM running for 13.181)
+2020-12-28 17:29:16,484 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-2] Total Search Result : 13 hits
+2020-12-28 17:29:22,493 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-0] Total Search Result : 13 hits
+2020-12-28 17:29:27,603 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-1] Total Search Result : 13 hits
+2020-12-28 18:46:31,422 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 19620 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-28 18:46:31,425 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-28 18:46:31,426 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-28 18:46:44,424 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-28 18:46:45,241 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 14.075 seconds (JVM running for 15.076)
+2020-12-28 18:47:47,607 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 19756 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-28 18:47:47,610 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-28 18:47:47,611 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-28 18:47:58,673 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-28 18:47:59,628 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 12.265 seconds (JVM running for 13.075)
+2020-12-28 20:01:07,376 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 22776 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2020-12-28 20:01:07,378 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020-12-28 20:01:07,379 INFO in.jobcounsel.services.main.AppMain [main] No active profile set, falling back to default profiles: default
+2020-12-28 20:01:19,706 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 65
+2020-12-28 20:01:20,414 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 13.284 seconds (JVM running for 14.02)
+2021-01-02 22:14:18,653 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 41588 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-02 22:14:18,679 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-02 22:14:18,680 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: prod
+2021-01-02 22:14:31,776 ERROR in.jobcounsel.services.db.core.DataAccessImpl [main] Exception While Calling DB In Method GETALLJOBSBYSECTOR Error Message : org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+2021-01-02 23:45:52,200 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 44360 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-02 23:45:52,204 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-02 23:45:52,206 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-02 23:48:25,432 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 54244 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-02 23:48:25,437 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-02 23:48:25,439 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-02 23:49:28,977 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 53360 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-02 23:49:28,981 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-02 23:49:28,982 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-02 23:49:49,950 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 148
+2021-01-02 23:49:50,872 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 22.217 seconds (JVM running for 23.01)
+2021-01-02 23:55:10,555 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 18048 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-02 23:55:10,562 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-02 23:55:10,565 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-03 00:03:18,721 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 53712 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-03 00:03:18,775 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-03 00:03:18,785 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 11:38:57,502 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 2132 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 11:38:57,762 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 11:38:57,765 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 11:41:21,981 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 33472 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 11:41:21,984 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 11:41:21,985 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 11:46:23,283 INFO in.jobcounsel.services.main.AppMain [restartedMain] Starting AppMain on WINDOWS-I58QT5N with PID 19240 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 11:46:23,287 DEBUG in.jobcounsel.services.main.AppMain [restartedMain] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 11:46:23,289 INFO in.jobcounsel.services.main.AppMain [restartedMain] The following profiles are active: dev
+2021-01-04 11:49:45,981 INFO in.jobcounsel.services.main.AppMain [restartedMain] Starting AppMain on WINDOWS-I58QT5N with PID 18580 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 11:49:45,985 DEBUG in.jobcounsel.services.main.AppMain [restartedMain] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 11:49:45,988 INFO in.jobcounsel.services.main.AppMain [restartedMain] The following profiles are active: dev
+2021-01-04 12:23:35,523 INFO in.jobcounsel.services.main.AppMain [restartedMain] Starting AppMain on WINDOWS-I58QT5N with PID 39788 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 12:23:35,526 DEBUG in.jobcounsel.services.main.AppMain [restartedMain] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 12:23:35,541 INFO in.jobcounsel.services.main.AppMain [restartedMain] The following profiles are active: dev
+2021-01-04 12:27:36,121 INFO in.jobcounsel.services.main.AppMain [restartedMain] Starting AppMain on WINDOWS-I58QT5N with PID 2596 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 12:27:36,125 DEBUG in.jobcounsel.services.main.AppMain [restartedMain] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 12:27:36,127 INFO in.jobcounsel.services.main.AppMain [restartedMain] The following profiles are active: dev
+2021-01-04 12:30:18,029 INFO in.jobcounsel.services.main.AppMain [restartedMain] Starting AppMain on WINDOWS-I58QT5N with PID 42852 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 12:30:18,032 DEBUG in.jobcounsel.services.main.AppMain [restartedMain] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 12:30:18,033 INFO in.jobcounsel.services.main.AppMain [restartedMain] The following profiles are active: dev
+2021-01-04 12:35:13,737 INFO in.jobcounsel.services.main.AppMain [restartedMain] Starting AppMain on WINDOWS-I58QT5N with PID 37252 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 12:35:13,742 DEBUG in.jobcounsel.services.main.AppMain [restartedMain] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 12:35:13,744 INFO in.jobcounsel.services.main.AppMain [restartedMain] The following profiles are active: dev
+2021-01-04 12:37:16,132 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 54640 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 12:37:16,135 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 12:37:16,136 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 12:37:38,056 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 148
+2021-01-04 12:37:39,115 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 23.359 seconds (JVM running for 24.134)
+2021-01-04 12:38:22,601 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 35024 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 12:38:22,631 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 12:38:22,647 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 12:42:18,190 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 51628 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 12:42:18,194 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 12:42:18,196 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 12:42:49,377 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 148
+2021-01-04 12:42:51,762 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 34.284 seconds (JVM running for 39.301)
+2021-01-04 13:00:24,189 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 18164 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 13:00:24,191 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 13:00:24,192 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 13:00:45,700 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 148
+2021-01-04 13:00:47,088 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 23.169 seconds (JVM running for 23.969)
+2021-01-04 13:01:55,212 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 49748 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 13:01:55,215 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 13:01:55,222 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 13:02:27,408 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 148
+2021-01-04 13:02:29,181 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 34.617 seconds (JVM running for 43.642)
+2021-01-04 13:20:31,903 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 14348 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 13:20:31,910 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 13:20:31,912 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 13:21:07,606 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 49480 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 13:21:07,615 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 13:21:07,617 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 13:21:40,373 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 148
+2021-01-04 13:21:42,265 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 35.269 seconds (JVM running for 40.053)
+2021-01-04 13:29:07,624 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 52020 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 13:29:07,626 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 13:29:07,627 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 13:29:26,673 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 148
+2021-01-04 13:29:27,792 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 20.445 seconds (JVM running for 21.243)
+2021-01-04 13:30:06,943 INFO in.jobcounsel.services.main.AppMain [main] Starting AppMain on WINDOWS-I58QT5N with PID 4052 (C:\workspace\sts\project\jobcounsel\jobcounselservices\target\classes started by Admin in C:\workspace\sts\project\jobcounsel\jobcounselservices)
+2021-01-04 13:30:06,947 DEBUG in.jobcounsel.services.main.AppMain [main] Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2021-01-04 13:30:06,950 INFO in.jobcounsel.services.main.AppMain [main] The following profiles are active: dev
+2021-01-04 13:30:32,422 DEBUG in.jobcounsel.services.startup.ApplicationStartupOperations [main] Total Amount Of Jobs Added To Index : 148
+2021-01-04 13:30:34,592 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 28.241 seconds (JVM running for 34.541)
+2021-01-04 13:32:09,248 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-7] Total Search Result : 3 hits
+2021-01-04 13:32:13,198 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-7] Total Search Result : 3 hits

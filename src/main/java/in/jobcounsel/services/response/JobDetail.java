@@ -26,6 +26,9 @@ public class JobDetail {
 	private String branchName;
 	@Getter
 	@Setter
+	private String stateName;
+	@Getter
+	@Setter
 	private int salaryPerMonth;
 	@Getter
 	@Setter

@@ -29,11 +29,12 @@ public class DataTypeConvertor {
 			convertedJobList = jobs.parallelStream()
 					.map(dbJob -> new JobCoreModel(Long.valueOf(dbJob.getId()), dbJob.getOrgid().getName(),
 							dbJob.getOrgid().getOrgURL(), dbJob.getBranchid().getName(),
-							dbJob.getSalaryID().getMinSalary(), dbJob.getSalaryID().getMaxSalary(), dbJob.getJobTitle(),
-							dbJob.getDesignation(), dbJob.getQualification(), dbJob.getDescription(),
-							dbJob.getEligibilitycriteria(), dbJob.getJobLocation(), dbJob.getJobdetailslnk(),
-							dbJob.getJobapplylnk(), dbJob.getJobApplyLastDate(), dbJob.getSelectionprocess(),
-							dbJob.getTotalVacancies(), dbJob.getJobtype(), dbJob.getTags(), dbJob.getStamp_created()))
+							dbJob.getStateId().getStatename(), dbJob.getSalaryID().getMinSalary(),
+							dbJob.getSalaryID().getMaxSalary(), dbJob.getJobTitle(), dbJob.getDesignation(),
+							dbJob.getQualification(), dbJob.getDescription(), dbJob.getEligibilitycriteria(),
+							dbJob.getJobLocation(), dbJob.getJobdetailslnk(), dbJob.getJobapplylnk(),
+							dbJob.getJobApplyLastDate(), dbJob.getSelectionprocess(), dbJob.getTotalVacancies(),
+							dbJob.getJobtype(), dbJob.getTags(), dbJob.getStamp_created()))
 					.collect(Collectors.toList());
 
 			return convertedJobList;
@@ -72,8 +73,11 @@ public class DataTypeConvertor {
 			List<in.jobcounsel.services.db.entities.Organization> organizations) {
 		List<Organization> convertedOrgList = new ArrayList<Organization>();
 		if (null != organizations && organizations.size() > 0) {
-			convertedOrgList = organizations.parallelStream().map(dbOrg -> new Organization(Long.valueOf(dbOrg.getId()),
-					dbOrg.getName(), dbOrg.getStamp_created(), dbOrg.getSectorId())).collect(Collectors.toList());
+			convertedOrgList = organizations.parallelStream()
+					.map(dbOrg -> new Organization(Long.valueOf(dbOrg.getId()), dbOrg.getName(),
+							dbOrg.getStamp_created(), dbOrg.getSectorId(), dbOrg.getOrgURL(), dbOrg.getAboutOrg(),
+							dbOrg.getStateId()))
+					.collect(Collectors.toList());
 
 			return convertedOrgList;
 		}

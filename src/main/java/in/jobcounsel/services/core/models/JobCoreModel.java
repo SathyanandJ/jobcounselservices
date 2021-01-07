@@ -23,6 +23,9 @@ public class JobCoreModel {
 	private String branchName;
 	@Getter
 	@Setter
+	private String stateName;
+	@Getter
+	@Setter
 	private int minSalary;
 	@Getter
 	@Setter

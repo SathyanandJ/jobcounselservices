@@ -19,7 +19,7 @@ import javax.persistence.Table;
 @Table(name = "Job")
 //@SecondaryTable(name="Organization")
 @SecondaryTables({ @SecondaryTable(name = "Organization"), @SecondaryTable(name = "Branch"),
-		@SecondaryTable(name = "Salary") })
+		@SecondaryTable(name = "Salary"), @SecondaryTable(name = "States") })
 public class Job {
 
 	@Id
@@ -38,6 +38,10 @@ public class Job {
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "salaryid", nullable = false, insertable = true, updatable = true)
 	private Salary salaryID;
+
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "stateid", nullable = false, insertable = true, updatable = true)
+	private States stateId;
 
 	@Column(name = "jobtitle")
 	private String jobTitle;
@@ -69,7 +73,7 @@ public class Job {
 	@Column(name = "selectionprocess")
 	private String selectionprocess;
 
-	@Column(name = "totalvancancies")
+	@Column(name = "totalvacancies")
 	private int totalVacancies;
 
 	@Column(name = "jobtype")
@@ -114,6 +118,14 @@ public class Job {
 
 	public void setSalaryID(Salary salaryID) {
 		this.salaryID = salaryID;
+	}
+
+	public States getStateId() {
+		return stateId;
+	}
+
+	public void setStateId(States stateId) {
+		this.stateId = stateId;
 	}
 
 	public String getJobTitle() {

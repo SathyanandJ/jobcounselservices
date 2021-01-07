@@ -99,11 +99,10 @@ public class LuceneDataIndexerImpl implements LuceneDataIndexer {
 		String jobQualification = data.get("JOBQUALIFICATION");
 		String jobDesignation = data.get("JOBDESIGNATION");
 		String jobOrganization = data.get("JOBORGANIZATION");
-		
 
 		TextField idField = new TextField("ID", id, Field.Store.YES);
 		TextField jobLocationField = new TextField("JOBLOCATION", jobLocation, Field.Store.NO);
-		TextField jobQualificationField = new TextField("JOBQUALIFICATION", jobQualification, Field.Store.NO);
+		TextField jobQualificationField = new TextField("JOBQUALIFICATION", conditionString(jobQualification), Field.Store.NO);
 		TextField jobDesignationField = new TextField("JOBDESIGNATION", jobDesignation, Field.Store.NO);
 		TextField jobOrganizationField = new TextField("JOBORGANIZATION", jobOrganization, Field.Store.NO);
 
@@ -114,6 +113,12 @@ public class LuceneDataIndexerImpl implements LuceneDataIndexer {
 		document.add(jobOrganizationField);
 
 		return document;
+	}
+
+	private String conditionString(String data) {
+		String result = data.replaceAll("[^a-zA-Z0-9 ]", "");
+		result = result.replaceAll("be", "");
+		return result;
 	}
 
 	@Override

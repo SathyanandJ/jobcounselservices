@@ -152,6 +152,8 @@ public class JobCounselServicesCoreImpl implements JobCounselServicesCore {
 		if (!AppUtility.isStringAlphaNumeric(searchQuery))
 			throw new JobServicesException("Invalid Query String Entered", "JOB_SEARCH_INVALID_QUERY");
 
+		searchQuery = AppUtility.filterToAlphaNumericCharacters(searchQuery);
+
 		List<Long> jobIds = dataSearch.searchDataInIndex(searchQuery, sectorID.intValue());
 		List<in.jobcounsel.services.db.entities.Job> searchResultJobs = dbServices.getJobsByIdAndSectorId(jobIds,
 				sectorID);

@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 public class AppUtility {
 
-	private static String regex = "^[a-zA-Z0-9 ]+$";
+	private static String regex = "^[a-zA-Z0-9 \"]+$";
 
 	private static Logger logger = LoggerFactory.getLogger(AppUtility.class);
 
@@ -39,6 +39,24 @@ public class AppUtility {
 					anyFormat, e.getMessage());
 		}
 		return dateStr;
+	}
+
+	public static java.util.Date swapDateToIndianFormat(java.util.Date anyFormatDate) {
+		SimpleDateFormat sm = new SimpleDateFormat("MM-dd-yyyy");
+		String strDate = sm.format(anyFormatDate);
+		java.util.Date dt = null;
+		try {
+			dt = sm.parse(strDate);
+		} catch (ParseException e) {
+			logger.error("Error Occured While Swapping Util Date To Indian Format Input : {} Error Message : {}",
+					anyFormatDate, e.getMessage());
+		}
+		return dt;
+	}
+
+	public static String filterToAlphaNumericCharacters(String data) {
+		String result = data.replaceAll("[^a-zA-Z0-9 \"]", "");
+		return result;
 	}
 
 }

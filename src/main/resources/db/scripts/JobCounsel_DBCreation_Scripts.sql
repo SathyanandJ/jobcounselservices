@@ -40,7 +40,9 @@ stamp_created timestamp default now()
 create table Organization(id INT(11) PRIMARY KEY AUTO_INCREMENT,
 sectorid INT(11) NOT NULL,
 name VARCHAR(200) NOT NULL,
-orgurl VARCHAR(500) NOT NULL,
+aboutorg VARCHAR(2000) NOT NULL,
+orgcareerurl VARCHAR(2000) NOT NULL,
+orgurl VARCHAR(2000) NOT NULL,
 stamp_created timestamp default now(),
 stamp_updated timestamp default now() on update now(),
 FOREIGN KEY (sectorid) REFERENCES Sector(id)

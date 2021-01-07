@@ -16,7 +16,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Organization")
-@SecondaryTables({ @SecondaryTable(name = "Sector") })
+@SecondaryTables({ @SecondaryTable(name = "Sector"), @SecondaryTable(name = "states") })
 public class Organization {
 
 	@Id
@@ -28,11 +28,21 @@ public class Organization {
 	@JoinColumn(name = "sectorid", nullable = false, insertable = false, updatable = false)
 	private Sector sectorId;
 
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "stateid", nullable = false, insertable = true, updatable = true)
+	private States stateId;
+
 	@Column(name = "name")
 	private String name;
 
 	@Column(name = "orgurl")
 	private String orgURL;
+
+	@Column(name = "aboutorg")
+	private String aboutOrg;
+
+	@Column(name = "orgcareerurl")
+	private String orgCareerURL;
 
 	@Column(name = "stamp_created")
 	private Timestamp stamp_created;
@@ -72,6 +82,30 @@ public class Organization {
 		this.orgURL = orgURL;
 	}
 
+	public States getStateId() {
+		return stateId;
+	}
+
+	public void setStateId(States stateId) {
+		this.stateId = stateId;
+	}
+
+	public String getAboutOrg() {
+		return aboutOrg;
+	}
+
+	public void setAboutOrg(String aboutOrg) {
+		this.aboutOrg = aboutOrg;
+	}
+
+	public String getOrgCareerURL() {
+		return orgCareerURL;
+	}
+
+	public void setOrgCareerURL(String orgCareerURL) {
+		this.orgCareerURL = orgCareerURL;
+	}
+
 	public Timestamp getStamp_created() {
 		return stamp_created;
 	}
@@ -87,5 +121,4 @@ public class Organization {
 	public void setStamp_updated(Timestamp stamp_updated) {
 		this.stamp_updated = stamp_updated;
 	}
-
 }
