@@ -15,6 +15,8 @@ public class AppUtility {
 
 	private static Logger logger = LoggerFactory.getLogger(AppUtility.class);
 
+	private static final String emailRegex = "^[A-Za-z0-9+_.-]+@(.+)$";
+
 	public static Date convertStringDateToSQLDate(String date) {
 		Date sqlDate = Date.valueOf(date);
 		return sqlDate;
@@ -57,6 +59,26 @@ public class AppUtility {
 	public static String filterToAlphaNumericCharacters(String data) {
 		String result = data.replaceAll("[^a-zA-Z0-9 \"]", "");
 		return result;
+	}
+
+	public static Boolean isEmailValid(String emailId) {
+		Boolean result = false;
+		if (emailId != null) {
+			Pattern emailPattern = Pattern.compile(emailRegex);
+			Matcher matcher = emailPattern.matcher(emailId);
+			result = matcher.matches();
+		}
+		return result;
+	}
+
+	public static String generateGUIDForEmail() {
+		Long currentTime = System.currentTimeMillis();
+		String guidGenerated = Long.toString(currentTime, 36);
+		return guidGenerated;
+	}
+	
+	public static String getCurrentDateInIndianFormatAsString() {
+		return new SimpleDateFormat("dd-MM-yyyy").format(new java.util.Date());
 	}
 
 }

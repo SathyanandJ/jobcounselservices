@@ -14,6 +14,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import in.jobcounsel.services.core.models.JobCoreModel;
+import in.jobcounsel.services.db.entities.EmailSubscription;
 import in.jobcounsel.services.request.JobReq;
 import in.jobcounsel.services.response.Branch;
 import in.jobcounsel.services.response.Organization;
@@ -157,6 +158,30 @@ public class DataTypeConvertor {
 		}
 
 		return job;
+	}
+
+	public static in.jobcounsel.services.db.entities.EmailSubscription createEmailSubscriptionDBObj(String emailId,
+			String guid, char isEmailVerified, char isEmailSubscribed) {
+		in.jobcounsel.services.db.entities.EmailSubscription emailSub = new in.jobcounsel.services.db.entities.EmailSubscription();
+		emailSub.setEmail(emailId);
+		emailSub.setEmailguid(guid);
+		emailSub.setIsEmailVerified(isEmailVerified);
+		emailSub.setIsSubscribed(isEmailSubscribed);
+		return emailSub;
+	}
+
+	public static List<in.jobcounsel.services.core.models.EmailSubscriptionCore> convertDBEmailSubListToCoreServiceList(
+			List<EmailSubscription> eMailSubDBObj) {
+		List<in.jobcounsel.services.core.models.EmailSubscriptionCore> convertedEMailSubList = new ArrayList<in.jobcounsel.services.core.models.EmailSubscriptionCore>();
+
+		if (null != eMailSubDBObj && eMailSubDBObj.size() > 0) {
+			convertedEMailSubList = eMailSubDBObj.parallelStream()
+					.map(eMailSub -> new in.jobcounsel.services.core.models.EmailSubscriptionCore(eMailSub.getId(),
+							eMailSub.getEmail(), eMailSub.getEmailguid(), eMailSub.getIsEmailVerified(),
+							eMailSub.getIsSubscribed()))
+					.collect(Collectors.toList());
+		}
+		return convertedEMailSubList;
 	}
 
 }

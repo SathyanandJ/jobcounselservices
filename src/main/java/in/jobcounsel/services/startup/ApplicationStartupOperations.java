@@ -32,7 +32,7 @@ public class ApplicationStartupOperations implements InitializingBean {
 		resetJobIndexing();
 		indexDBJobText();
 	}
-
+	
 	private boolean resetJobIndexing() {
 		try {
 			dataSearchOperations.resetDataInIndex();

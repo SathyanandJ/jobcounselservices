@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import in.jobcounsel.services.db.core.DataAccess;
 import in.jobcounsel.services.db.entities.Branch;
+import in.jobcounsel.services.db.entities.EmailSubscription;
 import in.jobcounsel.services.db.entities.Job;
 import in.jobcounsel.services.db.entities.Organization;
 import in.jobcounsel.services.db.entities.Sector;
@@ -70,6 +71,37 @@ public class DBServicesImpl implements DBServices {
 	public List<Job> getJobsByIdAndSectorId(List<Long> jobIds, Long sectorID) {
 		List<Job> jobs = dataAccess.getJobsByIdAndSectorId(jobIds,sectorID);
 		return jobs;
+	}
+
+	@Override
+	public EmailSubscription saveEmailSubscription(EmailSubscription subscription) {
+		EmailSubscription subScription = dataAccess.saveEmailSubscription(subscription);
+		return subScription;
+	}
+
+	@Override
+	public EmailSubscription getEmailSubscription(Integer subscriptionId) {
+		return dataAccess.getEmailSubscription(subscriptionId);
+	}
+
+	@Override
+	public EmailSubscription updateEmailSubscription(EmailSubscription subscription) {
+		return dataAccess.updateEmailSubscription(subscription);
+	}
+
+	@Override
+	public List<EmailSubscription> getAllEmailSubscriptions() {
+		return dataAccess.getAllEmailSubscriptions();
+	}
+
+	@Override
+	public List<Job> getAllActiveJobs() {
+		return dataAccess.getAllActiveJobs();
+	}
+
+	@Override
+	public List<Job> getAllJobsByOrgId(Integer orgId) {
+		return dataAccess.getAllJobsByOrg(orgId);
 	}
 
 }

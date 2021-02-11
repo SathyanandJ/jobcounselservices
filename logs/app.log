@@ -1037,3 +1037,39 @@
 2021-01-04 13:30:34,592 INFO in.jobcounsel.services.main.AppMain [main] Started AppMain in 28.241 seconds (JVM running for 34.541)
 2021-01-04 13:32:09,248 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-7] Total Search Result : 3 hits
 2021-01-04 13:32:13,198 DEBUG in.jobcounsel.services.core.search.lucene.LuceneDataSearchImpl [ForkJoinPool.commonPool-worker-7] Total Search Result : 3 hits
+2021-01-07 14:38:56,639 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Initialize Indexing In Lucene Message : Lock held by another program: C:\testing\lucene\write.lock
+2021-01-07 14:38:56,643 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Error Occured While deleting the index Failed
+2021-01-07 14:38:56,643 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Reset Index Operation failed Error Message : null
+2021-01-07 14:39:00,677 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Initialize Indexing In Lucene Message : Lock held by another program: C:\testing\lucene\write.lock
+2021-01-07 14:39:00,677 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Indexing In Lucene Message : null
+2021-01-07 14:39:00,677 ERROR in.jobcounsel.services.core.search.lucene.DataSearchOperationsLucene [main] Error Occured While adding Data To Index
+2021-01-07 23:12:21,723 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-19] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2021-01-18 00:14:47,967 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2021-01-18 13:01:17,785 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Critical Error Happened While Starting up the Application
+2021-01-18 13:01:17,786 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Must Perform Operations On Start up failed
+2021-01-18 13:01:17,786 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Startup Operation Error Message : Unsupported unit: Seconds
+2021-01-18 13:09:31,764 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Critical Error Happened While Starting up the Application
+2021-01-18 13:09:31,767 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Must Perform Operations On Start up failed
+2021-01-18 13:09:31,768 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Startup Operation Error Message : Unsupported unit: Seconds
+2021-01-21 16:45:00,086 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-1] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2021-01-21 16:46:04,772 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-3] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2021-01-21 16:46:33,739 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-2] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2021-01-21 16:47:02,443 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-3] Error While Searching For Jobs Error Message : Invalid Query String Entered
+2021-01-24 23:21:36,546 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2021-01-29 23:45:45,620 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-1] Error For Email Subscription
+2021-01-30 00:02:02,598 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Processing Email Subscription Request
+2021-01-30 19:24:06,352 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-1] Exception While Calling DB In Method getEmailSubscription Error Message : org.hibernate.hql.internal.ast.QuerySyntaxException: Subscription is not mapped [SELECT esub from Subscription esub where esub.id =:subid]
+2021-01-30 19:24:06,447 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-1] Error While Processing Email Subscription Request
+2021-01-30 19:30:23,878 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-0] Exception While Calling DB In Method getEmailSubscription Error Message : org.hibernate.hql.internal.ast.QuerySyntaxException: Subscription is not mapped [SELECT esub from Subscription esub where esub.id =:subid]
+2021-01-30 19:30:51,808 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Processing Email Subscription Request
+2021-01-30 19:35:21,293 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-0] Exception While Calling DB In Method getEmailSubscription Error Message : org.hibernate.hql.internal.ast.QuerySyntaxException: Subscription is not mapped [SELECT esub from Subscription esub where esub.id =:subid]
+2021-01-30 19:35:31,353 ERROR in.jobcounsel.services.controller.JobCounselController [ForkJoinPool.commonPool-worker-0] Error While Processing Email Subscription Request
+2021-01-30 19:59:19,180 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Initialize Indexing In Lucene Message : Lock held by another program: C:\testing\lucene\write.lock
+2021-01-30 19:59:19,181 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Error Occured While deleting the index Failed
+2021-01-30 19:59:19,181 ERROR in.jobcounsel.services.startup.ApplicationStartupOperations [main] Reset Index Operation failed Error Message : null
+2021-01-30 19:59:20,088 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Initialize Indexing In Lucene Message : Lock held by another program: C:\testing\lucene\write.lock
+2021-01-30 19:59:20,088 ERROR in.jobcounsel.services.core.search.lucene.LuceneDataIndexerImpl [main] Error During Indexing In Lucene Message : null
+2021-01-30 19:59:20,088 ERROR in.jobcounsel.services.core.search.lucene.DataSearchOperationsLucene [main] Error Occured While adding Data To Index
+2021-02-10 12:32:54,762 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-2] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2021-02-10 12:32:54,806 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-2] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2021-02-10 12:33:35,680 ERROR in.jobcounsel.services.db.core.DataAccessImpl [ForkJoinPool.commonPool-worker-3] Exception While Calling DB In Method getJobsById Error Message : org.hibernate.exception.SQLGrammarException: could not extract ResultSet

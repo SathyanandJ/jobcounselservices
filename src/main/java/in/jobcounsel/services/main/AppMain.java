@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan(basePackages = "in.jobcounsel.services")
+@ComponentScan(basePackages = "in.jobcounsel")
 @EnableJpaRepositories(basePackages = { "in.jobcounsel.services" })
 @EntityScan(basePackages = { "in.jobcounsel.services" })
 

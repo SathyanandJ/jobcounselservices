@@ -12,4 +12,6 @@ public interface JobsCoreBusinessHelper {
 	
 	public List<JobDetail> extractFullJobDataFromDB(List<JobCoreModel> jobDBData); 
 	
+	public Boolean createPDFWithJobData(List<JobCoreModel> jobList,String fileName);
+	
 }

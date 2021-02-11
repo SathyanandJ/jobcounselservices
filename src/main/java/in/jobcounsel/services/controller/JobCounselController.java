@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -25,9 +26,11 @@ import in.jobcounsel.platform.exception.JobServicesException;
 import in.jobcounsel.services.JobCounselServices;
 import in.jobcounsel.services.request.JobReq;
 import in.jobcounsel.services.response.Branch;
+import in.jobcounsel.services.response.HiringOrgResponse;
 import in.jobcounsel.services.response.Job;
 import in.jobcounsel.services.response.JobCount;
 import in.jobcounsel.services.response.JobDetail;
+import in.jobcounsel.services.response.LatestJobNotificationResp;
 import in.jobcounsel.services.response.Organization;
 import in.jobcounsel.services.response.Sector;
 
@@ -245,6 +248,146 @@ public class JobCounselController {
 		return output;
 	}
 	
+	@PostMapping(value = "user/subscribe")
+	public DeferredResult<ResponseEntity<?>> userSubscription(@RequestBody String emailId){
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(lightWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			Boolean emailSubscribed;
+			try {
+				emailSubscribed = jobCounselServices.saveUserSubscription(emailId);
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(emailSubscribed));
+			} catch (JobServicesException e) {
+				logger.error("Error While Processing Email Subscription Request");
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(e.getMessage()));
+			}
+		});
+		return output;
+	}
 	
+	
+	@PutMapping(value = "user/email/confirmation/{confirmation_id}")
+	public DeferredResult<ResponseEntity<?>> userEmailConfirmation(@PathVariable(name = "confirmation_id") String confirmationEmailGUID){
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(heavyWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			String confirmationMessage;
+			try {
+				confirmationMessage = jobCounselServices.confirmEmailGUID(confirmationEmailGUID);
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(confirmationMessage));
+			} catch (JobServicesException e) {
+				logger.error("Error While Processing Email Subscription Request");
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(e.getMessage()));
+			}
+		});
+		return output;
+	}
+	
+	@PutMapping(value = "user/email/unsubscribe/{unsubscribe_id}")
+	public DeferredResult<ResponseEntity<?>> unSubscribeEmail(@PathVariable(name = "unsubscribe_id") String unsubscribeId){
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(heavyWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			String confirmationMessage;
+			try {
+				confirmationMessage = jobCounselServices.unsubscribeEmail(unsubscribeId);
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(confirmationMessage));
+			} catch (JobServicesException e) {
+				logger.error("Error While Processing Email Subscription Request");
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(e.getMessage()));
+			}
+		});
+		return output;
+	}
+	
+	@PutMapping(value = "user/jobnotifications")
+	public DeferredResult<ResponseEntity<?>> notifyJobForSubscribers(){
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(heavyWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			Boolean notificationResult;
+			try {
+				notificationResult = jobCounselServices.jobNotifications();
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(notificationResult));
+			} catch (JobServicesException e) {
+				logger.error("Error While Processing Email Subscription Request");
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(e.getMessage()));
+			}
+		});
+		return output;
+	}
+	
+	
+	@GetMapping(value = "jobs/messages")
+	public DeferredResult<ResponseEntity<?>> jobMessages(){
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(lightWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			List<LatestJobNotificationResp> jobMessage;
+			try {
+				jobMessage = jobCounselServices.jobMessages();
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(jobMessage));
+			} catch (JobServicesException e) {
+				logger.error("Error While Retriving the List Of Job Messages");
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(e.getMessage()));
+			}
+		});
+		return output;
+	}
+	
+	@GetMapping(value = "organizations/hiring/{sectorId}")
+	public DeferredResult<ResponseEntity<?>> organizationHiring(@PathVariable(name = "sectorId") String sectorId){
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(lightWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			HiringOrgResponse hiringOrgs;
+			try {
+				hiringOrgs = jobCounselServices.hiringOrganizations(sectorId);
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(hiringOrgs));
+			} catch (JobServicesException e) {
+				logger.error("Error While Processing All Organizations Hiring");
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(e.getMessage()));
+			}
+		});
+		return output;
+	}
+	
+	@GetMapping(value = "organizations/jobs/{orgId}")
+	public DeferredResult<ResponseEntity<?>> allJobsForOrg(@PathVariable(name = "orgId") Long orgId){
+		DeferredResult<ResponseEntity<?>> output = new DeferredResult<>(lightWeightServiceTimeout);
+		output.onTimeout(()->output.setErrorResult(ControllerResponseGenerationHelper.getDefaultTimeoutRunnableResponseHeader()));
+
+		ForkJoinPool.commonPool().submit(() -> {
+			List<Job> jobsList = null;
+			try {
+				jobsList = jobCounselServices.getAllJobsForOrg(orgId);
+				output.setResult(ResponseEntity.ok().headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(jobsList));
+			} catch (JobServicesException e) {
+				logger.error("Error While Processing Get All Jobs For An Organization Request");
+				output.setResult(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(ControllerResponseGenerationHelper.getDefaultJsonHeader())
+						.body(e.getMessage()));
+			}
+		});
+		return output;
+	}
 	
 }
